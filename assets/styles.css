@@ -136,3 +136,36 @@ main>section+section{border-top:6px solid var(--yellow)}
 
 /* Preserve the facilitator at the left edge of the Honduras field photograph. */
 .practice-story>img.honduras-photo{object-position:left center}
+
+
+/* Unified training composition: one panel, one visual language, one reading path. */
+.training-panel{padding:46px;background:var(--soft);border:1px solid var(--line);border-radius:24px;box-shadow:0 18px 55px rgba(15,36,70,.07)}
+.training-panel-lead{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(240px,.65fr);gap:58px;align-items:center}
+.training-panel-lead .subsection-heading{margin:0}
+.training-panel-lead .training-outcomes-copy{margin:16px 0 0;color:#647087}
+.training-panel-illustration{width:100%;max-height:220px;object-fit:contain;border-radius:18px;background:var(--navy)}
+.training-outcomes{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1px;margin-top:36px;border:1px solid var(--line);background:var(--line)}
+.training-outcomes>div{display:grid;grid-template-columns:34px 1fr;gap:8px 12px;padding:22px 24px;background:#fff}
+.training-outcomes span{grid-row:1/3;color:var(--blue);font-size:.7rem;font-weight:900;letter-spacing:.12em}
+.training-outcomes strong{color:var(--navy)}
+.training-outcomes p{grid-column:2;margin:0;color:#647087;font-size:.88rem}
+.training-formats-head{display:flex;align-items:center;justify-content:space-between;gap:28px;margin-top:44px;padding-top:38px;border-top:1px solid #cfd9e6}
+.training-formats-head h3{margin:0;font-size:clamp(1.65rem,2.5vw,2.4rem)}
+.training-formats-head .button{flex:0 0 auto}
+.training-formats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px;margin-top:24px}
+.training-formats>div{display:grid;grid-template-columns:30px 1fr;gap:7px 10px;padding-top:17px;border-top:3px solid var(--yellow)}
+.training-formats span{grid-row:1/3;color:var(--blue);font-size:.7rem;font-weight:900;letter-spacing:.1em}
+.training-formats strong{color:var(--navy)}
+.training-formats p{grid-column:2;margin:0;color:#647087;font-size:.88rem}
+.training-proof{display:grid;grid-template-columns:.62fr 1.38fr;gap:42px;margin-top:40px;padding-top:34px;border-top:1px solid #cfd9e6}
+.training-metrics{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.training-metrics>div{padding-right:16px;border-right:1px solid var(--line)}
+.training-metrics>div:last-child{padding-right:0;border-right:0}
+.training-metrics strong{display:block;color:var(--navy);font-family:Georgia,"Times New Roman",serif;font-size:2.6rem;line-height:1}
+.training-metrics span{display:block;margin-top:8px;color:#647087;font-size:.78rem;font-weight:700}
+.training-quotes{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.training-quotes figure{margin:0;padding-left:18px;border-left:4px solid var(--yellow)}
+.training-quotes blockquote{margin:0;color:var(--navy);font-family:Georgia,"Times New Roman",serif;font-size:1rem;line-height:1.35}
+.training-quotes figcaption{margin-top:9px;color:#647087;font-size:.67rem;font-weight:900;letter-spacing:.1em;text-transform:uppercase}
+@media(max-width:950px){.training-panel-lead{grid-template-columns:1fr 240px;gap:34px}.training-proof{grid-template-columns:1fr}.training-formats{gap:18px}}
+@media(max-width:700px){.training-panel{padding:28px 22px}.training-panel-lead,.training-outcomes,.training-formats,.training-quotes{grid-template-columns:1fr}.training-panel-illustration{max-height:180px}.training-formats-head{align-items:flex-start;flex-direction:column}.training-proof{gap:30px}.training-metrics strong{font-size:2.25rem}}
