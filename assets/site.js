@@ -75,3 +75,39 @@ if (!reducedMotion.matches && 'IntersectionObserver' in window) {
     revealObserver.observe(block);
   });
 }
+
+
+document.querySelectorAll('[data-field-gallery]').forEach((gallery) => {
+  const tabs = [...gallery.querySelectorAll('[role="tab"]')];
+  const slides = [...gallery.querySelectorAll('.field-slide')];
+
+  const selectField = (nextTab, moveFocus = false) => {
+    tabs.forEach((tab) => {
+      const selected = tab === nextTab;
+      tab.setAttribute('aria-selected', String(selected));
+      tab.tabIndex = selected ? 0 : -1;
+    });
+
+    slides.forEach((slide) => {
+      const selected = slide.id === nextTab.getAttribute('aria-controls');
+      slide.hidden = !selected;
+      slide.classList.toggle('is-active', selected);
+    });
+
+    if (moveFocus) nextTab.focus();
+  };
+
+  tabs.forEach((tab, index) => {
+    tab.addEventListener('click', () => selectField(tab));
+    tab.addEventListener('keydown', (event) => {
+      if (!['ArrowLeft', 'ArrowRight', 'Home', 'End'].includes(event.key)) return;
+      event.preventDefault();
+      let nextIndex = index;
+      if (event.key === 'ArrowRight') nextIndex = (index + 1) % tabs.length;
+      if (event.key === 'ArrowLeft') nextIndex = (index - 1 + tabs.length) % tabs.length;
+      if (event.key === 'Home') nextIndex = 0;
+      if (event.key === 'End') nextIndex = tabs.length - 1;
+      selectField(tabs[nextIndex], true);
+    });
+  });
+});
