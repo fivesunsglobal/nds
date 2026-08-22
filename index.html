@@ -22,7 +22,7 @@
   <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png" />
   <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png" />
   <link rel="manifest" href="assets/site.webmanifest" />
-  <link rel="stylesheet" href="assets/styles.css?v=8" />
+  <link rel="stylesheet" href="assets/styles.css?v=10" />
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -77,6 +77,7 @@
   </script>
 </head>
 <body>
+  <div class="scroll-progress" aria-hidden="true"><span></span></div>
   <header class="site-header">
     <div class="wrap nav-wrap">
       <a class="nav-brand" href="#top" aria-label="New Democracy Studio home">
@@ -109,7 +110,7 @@
       </div>
     </section>
 
-    <section class="section-space soft" id="why">
+    <section class="section-space soft tone-from-navy" id="why">
       <div class="wrap studio-intro">
         <p class="eyebrow">What we do</p>
         <p>New Democracy Studio develops practical programs that help civic actors build capacity, strengthen their influence, and navigate a rapidly changing technological and information environment.</p>
@@ -136,14 +137,14 @@
       </div>
     </section>
 
-    <section class="section-space" id="programs">
+    <section class="section-space tone-from-soft" id="programs">
       <div class="wrap section-head narrow">
         <p class="eyebrow">Current programs</p>
         <h2>Built around the capabilities civic actors need now.</h2>
         <p>New Democracy Studio is designed as a platform for practical programs, cohorts, training, community, and future forms of support. The September session below is one current offering—not the limit of what the Studio will become.</p>
       </div>
 
-      <div class="wrap featured-program">
+      <div class="wrap featured-program featured-program-dark">
         <div class="program-meta">Free open session · September 2026 · Online · 60 minutes</div>
         <div class="program-grid">
           <div>
@@ -166,7 +167,7 @@
       </div>
     </section>
 
-    <section class="section-space navy" id="approach">
+    <section class="section-space navy tone-from-white" id="approach">
       <div class="wrap two-col approach-grid">
         <div>
           <p class="eyebrow light">How we work</p>
@@ -182,7 +183,7 @@
       </div>
     </section>
 
-    <section class="section-space" id="training">
+    <section class="section-space tone-from-navy" id="training">
       <div class="wrap training-grid">
         <div class="training-copy">
           <p class="eyebrow">Custom training</p>
@@ -205,7 +206,7 @@
       </div>
     </section>
 
-    <section class="section-space soft" id="field">
+    <section class="section-space soft tone-from-white" id="field">
       <div class="wrap field-intro">
         <div class="bio-photo"><img src="assets/adam-headshot.webp" alt="Adam Fivenson" /></div>
         <div>
@@ -215,7 +216,21 @@
           <p>Adam is a non-resident fellow at American University’s Center for Security, Innovation &amp; New Technology, where he writes and speaks on information and narrative risk mitigation globally. He has trained civil society organizations, journalists, governments, and development practitioners across the United States, Europe, Latin America, Africa, and Asia, and works closely with U.S. and European partners to support truth tellers and civil society around the world.</p>
           <p>Adam has designed and led programs for the United Nations, the U.S. government, and private foundations. At the National Endowment for Democracy’s International Forum for Democratic Studies, he led a research program examining democracy, authoritarianism, and the information environment.</p>
           <p>He led the design of an award-winning mobile tool for citizen engagement in Guatemala and taught Human-Centered Design for international development at Georgetown University’s School of Foreign Service for two years. He holds a BA in Communications from the University of Michigan and an MS in Foreign Service from Georgetown University, and lives in Washington, DC, with his family.</p>
-          <a class="linkedin-link" href="https://www.linkedin.com/in/afive/" target="_blank" rel="noopener noreferrer" aria-label="Adam Fivenson on LinkedIn"><span class="linkedin-badge">in</span><span>Connect with Adam on LinkedIn</span><span aria-hidden="true">↗</span></a>
+          <div class="profile-links">
+            <a class="linkedin-link" href="https://www.linkedin.com/in/afive/" target="_blank" rel="noopener noreferrer" aria-label="Adam Fivenson on LinkedIn"><span class="linkedin-badge">in</span><span>LinkedIn Profile</span><span aria-hidden="true">↗</span></a>
+            <div class="seen-in" aria-label="Adam Fivenson's publications and appearances">
+              <span class="seen-in-label">As seen in</span>
+              <div class="publication-links">
+                <a href="https://www.washingtonpost.com/opinions/2023/03/29/russia-disinformation-ukraine-bio-labs/" target="_blank" rel="noopener noreferrer"><span class="publication-mark">WP</span><span>Washington Post</span></a>
+                <a href="https://www.techpolicy.press/the-past-present-and-future-of-the-us-information-integrity-field/" target="_blank" rel="noopener noreferrer"><span class="publication-mark">TP</span><span>Tech Policy Press</span></a>
+                <a href="https://www.justsecurity.org/85200/one-year-later-lessons-from-ukraine-in-fighting-disinformation/" target="_blank" rel="noopener noreferrer"><span class="publication-mark">JS</span><span>Just Security</span></a>
+                <a href="https://www.youtube.com/watch?v=jDeFvvivGYw" target="_blank" rel="noopener noreferrer"><span class="publication-mark">TV</span><span>TVP World</span></a>
+                <a href="https://information-professionals.org/episode/episode-cognitive-crucible-episode-169/" target="_blank" rel="noopener noreferrer"><span class="publication-mark">CC</span><span>Cognitive Crucible</span></a>
+                <a href="https://www.thisishcd.com/episodes/adam-fivenson-using-a-human-centered-design-approach-to-design-foreign-aid-programs" target="_blank" rel="noopener noreferrer"><span class="publication-mark">HC</span><span>This is HCD</span></a>
+                <a href="https://www.ictworks.org/author/adam-fivenson/" target="_blank" rel="noopener noreferrer"><span class="publication-mark">IC</span><span>ICTWorks</span></a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -234,19 +249,14 @@
           <figcaption><strong>Guatemala</strong><span>Training civil society and community partners in digital tools and citizen engagement.</span></figcaption>
         </figure>
         <figure>
-          <img src="assets/cambodia-workshop.webp" alt="Adam Fivenson facilitating a participatory workshop in Cambodia" />
+          <img src="assets/cambodia-workshop-v2.jpg" alt="Adam Fivenson facilitating a participatory workshop in Cambodia" />
           <figcaption><strong>Cambodia</strong><span>Human-centered approaches to civic technology and service design.</span></figcaption>
         </figure>
       </div>
 
-      <div class="wrap vision-band">
-        <p class="eyebrow light">The broader vision</p>
-        <h3>Training is one part of a larger platform for civic capacity.</h3>
-        <p>New Democracy Studio is being built to support civic actors with practical expertise, technology, community, partnerships, and new resources as the needs of democratic civil society evolve.</p>
-      </div>
     </section>
 
-    <section class="section-space" id="faq">
+    <section class="section-space navy faq-dark tone-from-soft" id="faq">
       <div class="wrap faq-grid">
         <div>
           <p class="eyebrow">Questions</p>
@@ -257,12 +267,14 @@
           <details><summary>Do I need technical experience?</summary><p>No. Programs are designed around practical work and can be adapted for participants ranging from AI newcomers to experienced users.</p></details>
           <details><summary>Can you train an entire organization?</summary><p>Yes. New Democracy Studio designs single workshops and multi-session programs around the needs, tools, and workflows of specific teams.</p></details>
           <details><summary>Can foundations sponsor programs for grantees?</summary><p>Yes. Cohorts of grantee organizations can be designed around shared needs while still giving participants room to build use cases relevant to their own work.</p></details>
-          <details><summary>Do you work outside the United States?</summary><p>Yes. The Studio is international in outlook and experience. Current public programming is in English, with Spanish-language programming also possible.</p></details>
+          <details><summary>Where do you work?</summary><p>Just about anywhere.</p></details>
+          <details><summary>Are all sessions virtual?</summary><p>Many are, but we also offer in-person trainings.</p></details>
+          <details><summary>What topics can a training cover?</summary><p>Sessions can focus on AI adoption and privacy, strategic communications, research, fundraising, data, visualization, human-centered design, and technology-enabled workflows.</p></details>
         </div>
       </div>
     </section>
 
-    <section class="section-space contact" id="contact">
+    <section class="section-space contact tone-from-navy" id="contact">
       <div class="wrap contact-grid">
         <div>
           <p class="eyebrow light">Contact</p>
@@ -317,6 +329,6 @@
     formspree('initForm', { formElement: '#session-form', formId: 'xzepwgqk' });
   </script>
   <script src="https://unpkg.com/@formspree/ajax@1" defer></script>
-  <script src="assets/site.js?v=8"></script>
+  <script src="assets/site.js?v=10"></script>
 </body>
 </html>
