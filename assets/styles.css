@@ -109,3 +109,14 @@ main>section+section{border-top:6px solid var(--yellow)}
 .training-outcomes-intro{max-width:860px;margin-top:64px;margin-bottom:0}
 .training-outcomes-intro .training-outcomes-copy{margin:16px 0 0;color:#647087}
 .training-outcomes-intro+.outcome-strip{margin-top:28px}
+
+
+/* Position the profile around present-day focus rather than a résumé list. */
+.profile-focus{grid-template-columns:170px 1fr}
+.profile-focus dl{margin:0}
+.profile-focus dl>div{padding:14px 0;border-top:1px solid var(--line)}
+.profile-focus dl>div:first-child{padding-top:0;border-top:0}
+.profile-focus dt{margin:0 0 5px;color:var(--blue);font-size:.68rem;font-weight:900;letter-spacing:.12em;text-transform:uppercase}
+.profile-focus dd{margin:0;color:#56647a;font-size:.9rem;line-height:1.45}
+@media(max-width:950px){.profile-focus{grid-template-columns:150px 1fr}}
+@media(max-width:620px){.profile-focus{grid-template-columns:105px 1fr}}
