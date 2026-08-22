@@ -5,8 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content="New Democracy Studio develops practical programs that help civic voices build capacity, strengthen influence, and renew democracy in a changing technology and information environment." />
   <title>New Democracy Studio</title>
-  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
-  <link rel="stylesheet" href="assets/styles.css?v=7" />
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png" />
+  <link rel="manifest" href="assets/site.webmanifest" />
+  <link rel="stylesheet" href="assets/styles.css" />
 </head>
 <body>
   <header class="site-header">
@@ -42,10 +45,12 @@
     </section>
 
     <section class="section-space soft" id="why">
+      <div class="wrap studio-intro">
+        <p class="eyebrow">What we do</p>
+        <p>New Democracy Studio develops practical programs that help civic actors build capacity, strengthen their influence, and navigate a rapidly changing technological and information environment.</p>
+      </div>
       <div class="wrap why-layout">
         <div class="why-copy">
-          <p class="eyebrow">What we do</p>
-          <p class="lede-sm">New Democracy Studio develops practical programs that help civic actors build capacity, strengthen their influence, and navigate a rapidly changing technological and information environment.</p>
           <p class="eyebrow">Why now</p>
           <h2>The stakes are bigger than productivity.</h2>
           <div class="prose big-prose">
@@ -140,11 +145,11 @@
         <div class="bio-photo"><img src="assets/adam-headshot.webp" alt="Adam Fivenson" /></div>
         <div>
           <p class="eyebrow">About Adam</p>
-          <h2>Two decades in civic technology.</h2>
-          <p class="bio-open">Adam Fivenson has spent two decades helping civil society organizations, journalists, governments, and development practitioners do their work better, faster and easier using technology.</p>
-          <p>His work spans AI adoption, strategic communications, data and visualization, civic technology, and human-centered design. He has designed and delivered programs across the United States, Europe, Latin America, Africa, and Asia.</p>
-          <p>Most recently, Adam designed and led six practitioner cohorts focused on applied AI. He also taught Lean Human-Centered Design for international development at Georgetown University’s School of Foreign Service for two years.</p>
-          <p><a class="button primary" href="https://www.linkedin.com/in/afive/" target="_blank" rel="noopener noreferrer">Connect on LinkedIn</a></p>
+          <h2>At the intersection of democracy and technology.</h2>
+          <p class="bio-open">Adam Fivenson has two decades of experience at the intersection of democracy, technology, and international affairs.</p>
+          <p>Adam is a non-resident fellow at American University’s Center for Security, Innovation &amp; New Technology, where he writes and speaks on information and narrative risk mitigation globally. He has trained civil society organizations, journalists, governments, and development practitioners across the United States, Europe, Latin America, Africa, and Asia, and works closely with U.S. and European partners to support truth tellers and civil society around the world.</p>
+          <p>He led the design of an award-winning mobile tool for citizen engagement in Guatemala and taught Human-Centered Design for international development at Georgetown University’s School of Foreign Service for two years. He holds a BA in Communications from the University of Michigan and an MS in Foreign Service from Georgetown University, and lives in Washington, DC, with his family.</p>
+          <a class="linkedin-link" href="https://www.linkedin.com/in/afive/" target="_blank" rel="noopener noreferrer" aria-label="Adam Fivenson on LinkedIn"><span class="linkedin-badge">in</span><span>Connect with Adam on LinkedIn</span><span aria-hidden="true">↗</span></a>
         </div>
       </div>
 
@@ -159,30 +164,27 @@
           <figcaption><strong>Lima, Peru</strong><span>AI for journalists — practical workflows for productivity, research, and communications.</span></figcaption>
         </figure>
         <figure>
-          <img src="assets/cambodia-workshop.webp" alt="Participatory technology design workshop in Cambodia" />
-          <figcaption><strong>Cambodia</strong><span>Human-centered approaches to civic technology and service design.</span></figcaption>
+          <img src="assets/guatemala-training.webp" alt="Adam Fivenson facilitating a workshop with community participants in Guatemala" />
+          <figcaption><strong>Guatemala</strong><span>Training civil society and community partners in digital tools and citizen engagement.</span></figcaption>
         </figure>
         <figure>
-          <img src="assets/honduras-field.webp" alt="Field research conversation in Central America" />
+          <img src="assets/central-america-field.webp" alt="Adam Fivenson facilitating a training workshop in Central America" />
           <figcaption><strong>Central America</strong><span>Training local civil society in digital data collection.</span></figcaption>
         </figure>
       </div>
 
-      <div class="wrap field-graphic-row">
-        <img src="assets/community-field.webp" alt="Line illustration of community outreach, mapping, and field research" />
-        <div>
-          <p class="eyebrow">The broader vision</p>
-          <h3>Training is one part of a larger platform for civic capacity.</h3>
-          <p>New Democracy Studio is being built to support civic actors with practical expertise, technology, community, partnerships, and new resources as the needs of democratic civil society evolve.</p>
-        </div>
+      <div class="wrap vision-band">
+        <p class="eyebrow light">The broader vision</p>
+        <h3>Training is one part of a larger platform for civic capacity.</h3>
+        <p>New Democracy Studio is being built to support civic actors with practical expertise, technology, community, partnerships, and new resources as the needs of democratic civil society evolve.</p>
       </div>
     </section>
 
     <section class="section-space" id="faq">
       <div class="wrap faq-grid">
         <div>
-          <p class="eyebrow">FAQ</p>
-          <h2>A few useful answers.</h2>
+          <p class="eyebrow">Questions</p>
+          <h2>FAQ</h2>
         </div>
         <div class="faq-list">
           <details><summary>Who are New Democracy Studio programs for?</summary><p>Programs are designed primarily for people working in democracy, human rights, journalism, research, advocacy, fundraising, foundations, and adjacent civic fields.</p></details>
@@ -201,12 +203,14 @@
           <h2>Get in touch.</h2>
           <p>Ask about a program, organizational training, a foundation-sponsored cohort, or a potential collaboration.</p>
         </div>
-        <form class="contact-form" action="https://formspree.io/f/xzepwgqk" method="POST" data-formspree-form>
+        <form class="contact-form" id="contact-form" action="https://formspree.io/f/xzepwgqk" method="POST">
+          <div class="form-status" data-fs-success aria-live="polite"></div>
+          <div class="form-status error" data-fs-error aria-live="polite"></div>
           <input type="hidden" name="form_type" value="General New Democracy Studio inquiry" />
-          <div class="form-row"><label>Name<input required name="name" autocomplete="name" /></label><label>Email<input required type="email" name="email" autocomplete="email" /></label></div>
-          <div class="form-row"><label>Organization<input name="organization" autocomplete="organization" /></label><label>What are you interested in?<select name="interest"><option>Organizational training</option><option>Current programs</option><option>Foundation / grantee cohort</option><option>Partnership or collaboration</option><option>Something else</option></select></label></div>
-          <label>Message<textarea name="message" required></textarea></label>
-          <button class="button yellow" type="submit">Send inquiry</button>
+          <div class="form-row"><label>Name<input data-fs-field required name="name" autocomplete="name" /></label><label>Email<input data-fs-field required type="email" name="email" autocomplete="email" /></label></div>
+          <div class="form-row"><label>Organization<input data-fs-field name="organization" autocomplete="organization" /></label><label>What are you interested in?<select data-fs-field name="interest"><option>Organizational training</option><option>Current programs</option><option>Foundation / grantee cohort</option><option>Partnership or collaboration</option><option>Something else</option></select></label></div>
+          <label>Message<textarea data-fs-field name="message" required></textarea></label>
+          <button class="button yellow" type="submit" data-fs-submit-btn>Send inquiry</button>
           <p class="fine">By submitting this form, you agree to the <a href="privacy.html">Privacy Policy</a>.</p>
         </form>
       </div>
@@ -223,22 +227,30 @@
 
   <dialog class="modal" id="requestModal">
     <div class="modal-head">
-      <div><p class="eyebrow light">September 2026</p><h2>Request a seat</h2><p>AI Productivity Without Sacrificing Privacy · 20 seats</p></div>
+      <div><p class="eyebrow light">September 2026</p><h2>Request a seat</h2><p>AI Productivity Without Sacrificing Privacy · Free · 20 seats</p></div>
       <button class="modal-close" type="button" aria-label="Close">×</button>
     </div>
-    <form class="modal-body" action="https://formspree.io/f/xzepwgqk" method="POST" data-formspree-form>
+    <form class="modal-body" id="session-form" action="https://formspree.io/f/xzepwgqk" method="POST">
+      <div class="form-status" data-fs-success aria-live="polite"></div>
+      <div class="form-status error" data-fs-error aria-live="polite"></div>
       <input type="hidden" name="form_type" value="Request to join September 2026 New Democracy Studio session" />
-      <div class="form-row"><label>Name<input required name="name" autocomplete="name" /></label><label>Email<input required type="email" name="email" autocomplete="email" /></label></div>
-      <div class="form-row"><label>Organization<input required name="organization" autocomplete="organization" /></label><label>Role<input name="role" /></label></div>
-      <label>Country<input name="country" autocomplete="country-name" /></label>
-      <label>How are you currently using AI?<textarea name="current_ai_use"></textarea></label>
-      <label>What would make this session useful for you?<textarea name="goal"></textarea></label>
-      <label class="check"><input type="checkbox" name="future_updates" value="yes" /> Keep me informed about future New Democracy Studio programs.</label>
-      <button class="button primary" type="submit">Request to join</button>
+      <div class="form-row"><label>Name<input data-fs-field required name="name" autocomplete="name" /></label><label>Email<input data-fs-field required type="email" name="email" autocomplete="email" /></label></div>
+      <div class="form-row"><label>Organization<input data-fs-field required name="organization" autocomplete="organization" /></label><label>Role<input data-fs-field name="role" /></label></div>
+      <label>Country<input data-fs-field name="country" autocomplete="country-name" /></label>
+      <label>How are you currently using AI?<textarea data-fs-field name="current_ai_use"></textarea></label>
+      <label>What would make this session useful for you?<textarea data-fs-field name="goal"></textarea></label>
+      <label class="check"><input data-fs-field type="checkbox" name="future_updates" value="yes" /> Keep me informed about future New Democracy Studio programs.</label>
+      <button class="button primary" type="submit" data-fs-submit-btn>Request to join</button>
       <p class="fine">Submitting a request does not guarantee a seat. Requests are reviewed to keep the session small, relevant, and interactive.</p>
     </form>
   </dialog>
 
-  <script src="assets/site.js?v=7"></script>
+  <script>
+    window.formspree = window.formspree || function () { (formspree.q = formspree.q || []).push(arguments); };
+    formspree('initForm', { formElement: '#contact-form', formId: 'xzepwgqk' });
+    formspree('initForm', { formElement: '#session-form', formId: 'xzepwgqk' });
+  </script>
+  <script src="https://unpkg.com/@formspree/ajax@1" defer></script>
+  <script src="assets/site.js"></script>
 </body>
 </html>
