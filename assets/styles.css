@@ -120,3 +120,12 @@ main>section+section{border-top:6px solid var(--yellow)}
 .profile-focus dd{margin:0;color:#56647a;font-size:.9rem;line-height:1.45}
 @media(max-width:950px){.profile-focus{grid-template-columns:150px 1fr}}
 @media(max-width:620px){.profile-focus{grid-template-columns:105px 1fr}}
+
+
+/* Keep the leadership profile visually balanced: one narrative and one substantial portrait. */
+.editorial-profile{grid-template-columns:minmax(0,1.45fr) minmax(260px,.55fr);gap:72px;align-items:start}
+.profile-portrait{display:flex;justify-content:flex-end}
+.profile-portrait img{width:min(100%,360px);aspect-ratio:4/5;object-fit:cover;border-radius:20px;box-shadow:0 18px 45px rgba(20,43,78,.12)}
+.editorial-bio .bio-open{font-size:1.16rem;line-height:1.62}
+@media(max-width:950px){.editorial-profile{grid-template-columns:minmax(0,1fr) 250px;gap:42px}.profile-portrait img{width:250px}}
+@media(max-width:760px){.editorial-profile{grid-template-columns:1fr}.profile-portrait{justify-content:flex-start;order:-1}.profile-portrait img{width:min(72vw,300px)}}
