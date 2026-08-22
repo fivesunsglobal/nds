@@ -1,6 +1,4 @@
-// Replace this ONE value with your Formspree form endpoint before launch.
-// Example: https://formspree.io/f/abcdwxyz
-const FORMSPREE_ENDPOINT = 'https://formspree.io/f/REPLACE_ME';
+const FORMSPREE_ENDPOINT = 'https://formspree.io/f/xzepwgqk';
 
 const modal = document.getElementById('requestModal');
 
