@@ -132,3 +132,7 @@ main>section+section{border-top:6px solid var(--yellow)}
 
 
 .training-audience{max-width:900px;margin:-4px 0 20px;color:var(--navy);font-family:Georgia,"Times New Roman",serif;font-size:clamp(1.35rem,2.25vw,2rem);line-height:1.3}
+
+
+/* Preserve the facilitator at the left edge of the Honduras field photograph. */
+.practice-story>img.honduras-photo{object-position:left center}
