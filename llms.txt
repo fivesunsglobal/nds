@@ -1,0 +1,27 @@
+# New Democracy Studio
+
+> New Democracy Studio builds practical civic capacity for a changing technology and information environment.
+
+New Democracy Studio develops programs for democracy, human-rights, journalism, research, advocacy, and foundation professionals. Its work focuses on applied AI, privacy-aware technology adoption, strategic communications, research, fundraising, data, visualization, and community engagement.
+
+## Core pages
+
+- [Homepage](https://newdemocracystud.io/): Mission, programs, training, field experience, leadership, FAQ, and contact information.
+- [Privacy policy](https://newdemocracystud.io/privacy.html): How submitted information is handled.
+- [Terms of use](https://newdemocracystud.io/terms.html): Terms governing use of the website.
+
+## Programs and services
+
+- Practical workshops for civic organizations.
+- Multi-session training and implementation programs.
+- Foundation-sponsored cohorts for grantee organizations.
+- Applied AI workflows with privacy and information-protection safeguards.
+- Strategic communications, influence, research, fundraising, data, and visualization support.
+
+## Leadership
+
+Adam Fivenson is Executive Director and Lead Trainer. He has two decades of experience at the intersection of democracy, technology, and international affairs and has designed and led programs for the United Nations, the U.S. government, private foundations, civil society organizations, journalists, and development practitioners.
+
+## Canonical source
+
+The canonical website is https://newdemocracystud.io/.
