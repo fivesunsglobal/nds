@@ -1,6 +1,6 @@
 # New Democracy Studio
 
-> Strengthening civic organizations in the AI age.
+> Strengthening civic organizations in the AI age
 
 New Democracy Studio develops programs for democracy, human-rights, journalism, research, advocacy, and foundation professionals. Its work focuses on applied AI, privacy-aware technology adoption, strategic communications, research, fundraising, data, visualization, and community engagement.
 
@@ -15,12 +15,12 @@ New Democracy Studio develops programs for democracy, human-rights, journalism, 
 - Practical workshops for civic organizations.
 - Multi-session training and implementation programs.
 - Foundation-sponsored cohorts for grantee organizations.
-- Applied AI workflows with privacy and information-protection safeguards.
+- Applied AI workflows with privacy and information-protection safeguards, including the AI, Privacy & Your Data program.
 - Strategic communications, influence, research, fundraising, data, and visualization support.
 
 ## Leadership
 
-Adam Fivenson is Executive Director and Lead Trainer. He has two decades of experience at the intersection of democracy, technology, and international affairs and has designed and led programs for the United Nations, the U.S. government, private foundations, civil society organizations, journalists, and development practitioners.
+Adam Fivenson is Chief Democracy Officer. He has two decades of experience at the intersection of democracy, technology, and international affairs and has designed and led programs for the United Nations, the U.S. government, private foundations, civil society organizations, journalists, and development practitioners.
 
 ## Canonical source
 
