@@ -169,3 +169,9 @@ main>section+section{border-top:6px solid var(--yellow)}
 .training-quotes figcaption{margin-top:9px;color:#647087;font-size:.67rem;font-weight:900;letter-spacing:.1em;text-transform:uppercase}
 @media(max-width:950px){.training-panel-lead{grid-template-columns:1fr 240px;gap:34px}.training-proof{grid-template-columns:1fr}.training-formats{gap:18px}}
 @media(max-width:700px){.training-panel{padding:28px 22px}.training-panel-lead,.training-outcomes,.training-formats,.training-quotes{grid-template-columns:1fr}.training-panel-illustration{max-height:180px}.training-formats-head{align-items:flex-start;flex-direction:column}.training-proof{gap:30px}.training-metrics strong{font-size:2.25rem}}
+
+
+/* Shared page gutters: keep narrow section headers aligned with full-width content. */
+.wrap{width:min(calc(100% - 96px),var(--max))}
+.section-header{width:min(calc(100% - 96px),940px);margin-left:max(48px,calc((100% - var(--max))/2));margin-right:auto}
+@media(max-width:620px){.wrap{width:min(calc(100% - 32px),var(--max))}.section-header{width:min(calc(100% - 32px),940px);margin-left:16px}}
