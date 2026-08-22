@@ -129,3 +129,6 @@ main>section+section{border-top:6px solid var(--yellow)}
 .editorial-bio .bio-open{font-size:1.16rem;line-height:1.62}
 @media(max-width:950px){.editorial-profile{grid-template-columns:minmax(0,1fr) 250px;gap:42px}.profile-portrait img{width:250px}}
 @media(max-width:760px){.editorial-profile{grid-template-columns:1fr}.profile-portrait{justify-content:flex-start;order:-1}.profile-portrait img{width:min(72vw,300px)}}
+
+
+.training-audience{max-width:900px;margin:-4px 0 20px;color:var(--navy);font-family:Georgia,"Times New Roman",serif;font-size:clamp(1.35rem,2.25vw,2rem);line-height:1.3}
