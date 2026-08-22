@@ -75,3 +75,14 @@ if (!reducedMotion.matches && 'IntersectionObserver' in window) {
     revealObserver.observe(block);
   });
 }
+
+const practiceRail = document.querySelector('[data-practice-rail]');
+const scrollPracticeStories = (direction) => {
+  if (!practiceRail) return;
+  const story = practiceRail.querySelector('.practice-story');
+  const gap = 18;
+  const distance = story ? story.getBoundingClientRect().width + gap : practiceRail.clientWidth;
+  practiceRail.scrollBy({ left: direction * distance, behavior: reducedMotion.matches ? 'auto' : 'smooth' });
+};
+document.querySelector('[data-practice-prev]')?.addEventListener('click', () => scrollPracticeStories(-1));
+document.querySelector('[data-practice-next]')?.addEventListener('click', () => scrollPracticeStories(1));
