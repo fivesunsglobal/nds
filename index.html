@@ -22,7 +22,7 @@
   <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png" />
   <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png" />
   <link rel="manifest" href="assets/site.webmanifest" />
-  <link rel="stylesheet" href="assets/styles.css?v=10" />
+  <link rel="stylesheet" href="assets/styles.css?v=11" />
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -83,7 +83,8 @@
       <a class="nav-brand" href="#top" aria-label="New Democracy Studio home">
         <span>NEW</span><strong>DEMOCRACY</strong><span>STUDIO</span>
       </a>
-      <nav class="nav-links" aria-label="Primary navigation">
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav"><span>Menu</span><span class="nav-toggle-icon" aria-hidden="true"></span></button>
+      <nav class="nav-links" id="primary-nav" aria-label="Primary navigation">
         <a href="#why">Why now</a>
         <a href="#programs">Programs</a>
         <a href="#training">Training</a>
@@ -110,7 +111,7 @@
       </div>
     </section>
 
-    <section class="section-space soft tone-from-navy" id="why">
+    <section class="section-space soft" id="why">
       <div class="wrap studio-intro">
         <p class="eyebrow">What we do</p>
         <p>New Democracy Studio develops practical programs that help civic actors build capacity, strengthen their influence, and navigate a rapidly changing technological and information environment.</p>
@@ -137,7 +138,7 @@
       </div>
     </section>
 
-    <section class="section-space tone-from-soft" id="programs">
+    <section class="section-space" id="programs">
       <div class="wrap section-head narrow">
         <p class="eyebrow">Current programs</p>
         <h2>Built around the capabilities civic actors need now.</h2>
@@ -167,7 +168,7 @@
       </div>
     </section>
 
-    <section class="section-space navy tone-from-white" id="approach">
+    <section class="section-space navy" id="approach">
       <div class="wrap two-col approach-grid">
         <div>
           <p class="eyebrow light">How we work</p>
@@ -183,7 +184,7 @@
       </div>
     </section>
 
-    <section class="section-space tone-from-navy" id="training">
+    <section class="section-space" id="training">
       <div class="wrap training-grid">
         <div class="training-copy">
           <p class="eyebrow">Custom training</p>
@@ -206,7 +207,7 @@
       </div>
     </section>
 
-    <section class="section-space soft tone-from-white" id="field">
+    <section class="section-space soft" id="field">
       <div class="wrap field-intro">
         <div class="bio-photo"><img src="assets/adam-headshot.webp" alt="Adam Fivenson" /></div>
         <div>
@@ -256,7 +257,7 @@
 
     </section>
 
-    <section class="section-space navy faq-dark tone-from-soft" id="faq">
+    <section class="section-space navy faq-dark" id="faq">
       <div class="wrap faq-grid">
         <div>
           <p class="eyebrow">Questions</p>
@@ -274,7 +275,7 @@
       </div>
     </section>
 
-    <section class="section-space contact tone-from-navy" id="contact">
+    <section class="section-space contact" id="contact">
       <div class="wrap contact-grid">
         <div>
           <p class="eyebrow light">Contact</p>
@@ -329,6 +330,6 @@
     formspree('initForm', { formElement: '#session-form', formId: 'xzepwgqk' });
   </script>
   <script src="https://unpkg.com/@formspree/ajax@1" defer></script>
-  <script src="assets/site.js?v=10"></script>
+  <script src="assets/site.js?v=11"></script>
 </body>
 </html>

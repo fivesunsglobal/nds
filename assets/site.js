@@ -1,4 +1,23 @@
 const modal = document.getElementById('requestModal');
+const siteHeader = document.querySelector('.site-header');
+const navToggle = document.querySelector('.nav-toggle');
+const primaryNav = document.getElementById('primary-nav');
+
+const closeMobileNav = () => {
+  siteHeader?.classList.remove('nav-open');
+  navToggle?.setAttribute('aria-expanded', 'false');
+};
+
+navToggle?.addEventListener('click', () => {
+  const willOpen = navToggle.getAttribute('aria-expanded') !== 'true';
+  siteHeader?.classList.toggle('nav-open', willOpen);
+  navToggle.setAttribute('aria-expanded', String(willOpen));
+});
+
+primaryNav?.querySelectorAll('a').forEach((link) => link.addEventListener('click', closeMobileNav));
+document.addEventListener('keydown', (event) => {
+  if (event.key === 'Escape') closeMobileNav();
+});
 
 document.querySelectorAll('[data-open-request]').forEach((button) => {
   button.addEventListener('click', (event) => {
