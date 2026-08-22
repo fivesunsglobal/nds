@@ -14,6 +14,25 @@ modal?.addEventListener('click', (event) => {
 
 const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
 
+const progressBar = document.querySelector('.scroll-progress span');
+let progressFrame = null;
+
+const updateScrollProgress = () => {
+  const scrollable = document.documentElement.scrollHeight - window.innerHeight;
+  const progress = scrollable > 0 ? Math.min(Math.max(window.scrollY / scrollable, 0), 1) : 0;
+  progressBar?.style.setProperty('transform', `scaleX(${progress})`);
+  progressFrame = null;
+};
+
+const requestProgressUpdate = () => {
+  if (progressFrame !== null) return;
+  progressFrame = window.requestAnimationFrame(updateScrollProgress);
+};
+
+window.addEventListener('scroll', requestProgressUpdate, { passive: true });
+window.addEventListener('resize', requestProgressUpdate);
+updateScrollProgress();
+
 if (!reducedMotion.matches && 'IntersectionObserver' in window) {
   const revealBlocks = document.querySelectorAll('main > section:not(.hero) > .wrap');
   document.documentElement.classList.add('reveal-enabled');
