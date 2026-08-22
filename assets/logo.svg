@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="620" height="330" viewBox="0 0 620 330" role="img" aria-labelledby="t">
+<title id="t">New Democracy Studio</title>
+<rect width="620" height="330" fill="#fff"/>
+<path d="M54 262V48H412V73" fill="none" stroke="#1677ff" stroke-width="12"/>
+<text x="102" y="108" font-family="Arial, Helvetica, sans-serif" font-size="54" letter-spacing="13" fill="#0b1d3a">NEW</text>
+<text x="102" y="190" font-family="Arial, Helvetica, sans-serif" font-size="71" font-weight="800" fill="#0b1d3a">DEMOCRACY</text>
+<text x="102" y="255" font-family="Arial, Helvetica, sans-serif" font-size="50" letter-spacing="13" fill="#0b1d3a">STUDIO</text>
+<path d="M102 284H355" stroke="#ffc72c" stroke-width="10"/>
+</svg>

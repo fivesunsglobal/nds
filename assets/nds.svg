@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="240" height="240" viewBox="0 0 240 240" role="img" aria-labelledby="t">
+<title id="t">NDS</title>
+<rect width="240" height="240" rx="28" fill="#fff"/>
+<path d="M42 190V42H190V65" fill="none" stroke="#1677ff" stroke-width="10"/>
+<text x="70" y="143" font-family="Arial, Helvetica, sans-serif" font-size="72" font-weight="800" fill="#0b1d3a">NDS</text>
+<path d="M70 170H174" stroke="#ffc72c" stroke-width="8"/>
+</svg>
