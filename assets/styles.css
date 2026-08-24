@@ -175,3 +175,12 @@ main>section+section{border-top:6px solid var(--yellow)}
 .wrap{width:min(calc(100% - 96px),var(--max))}
 .section-header{width:min(calc(100% - 96px),940px);margin-left:max(48px,calc((100% - var(--max))/2));margin-right:auto}
 @media(max-width:620px){.wrap{width:min(calc(100% - 32px),var(--max))}.section-header{width:min(calc(100% - 32px),940px);margin-left:16px}}
+
+
+/* Balance the homepage hero and keep its key audience phrase intact on desktop. */
+@media(min-width:951px){
+  .hero-grid{grid-template-columns:minmax(0,.64fr) minmax(0,1.36fr);gap:56px}
+  .hero-mark img{width:112%;max-width:430px}
+  .hero h1{font-size:clamp(3.3rem,5.5vw,5.35rem)}
+  .hero-phrase{white-space:nowrap}
+}
