@@ -167,3 +167,21 @@
   .program-group{padding:24px 20px}
   .group-cards{grid-template-columns:1fr}
 }
+
+
+/* Consolidate the outcomes into Ideas and place the Studio rationale inside About. */
+.ideas-bridge{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:70px;margin-top:58px;padding:48px 50px;border-radius:24px;background:var(--navy);color:#fff}
+.ideas-bridge h3{color:#fff;font-size:clamp(2rem,3.5vw,3.35rem);margin-bottom:0}
+.ideas-bridge-copy{padding-top:8px}
+.ideas-bridge-copy .section-statement{margin-bottom:16px}
+.ideas-bridge-copy p:last-child{color:#cbd7e8;margin-bottom:0}
+.about-studio{display:grid;grid-template-columns:190px minmax(0,1fr);gap:70px;margin-bottom:66px;padding:42px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.about-studio h3{font-size:clamp(2rem,3.5vw,3.3rem);margin-bottom:16px}
+.about-studio p:last-child{max-width:800px;color:#647087;margin-bottom:0;font-size:1.08rem}
+@media(max-width:950px){
+  .ideas-bridge,.about-studio{grid-template-columns:1fr;gap:24px}
+}
+@media(max-width:620px){
+  .ideas-bridge{padding:32px 24px}
+  .about-studio{margin-bottom:48px}
+}
