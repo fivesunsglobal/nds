@@ -11,13 +11,26 @@ if (!reducedMotion && 'IntersectionObserver' in window) {
 
 const sectionLinks = [...document.querySelectorAll('[data-section]')];
 const sections = sectionLinks.map(link => document.getElementById(link.dataset.section)).filter(Boolean);
-if (sections.length && 'IntersectionObserver' in window) {
-  const sectionObserver = new IntersectionObserver(entries => {
-    const visible = entries.filter(entry => entry.isIntersecting).sort((a,b) => b.intersectionRatio-a.intersectionRatio)[0];
-    if (!visible) return;
-    sectionLinks.forEach(link => link.classList.toggle('active', link.dataset.section === visible.target.id));
-    sectionLinks.find(link => link.classList.contains('active'))?.scrollIntoView({behavior: reducedMotion ? 'auto' : 'smooth', inline:'center', block:'nearest'});
-  }, { rootMargin: '-18% 0px -58% 0px', threshold: [0,.01,.1,.25] });
-  sections.forEach(section => sectionObserver.observe(section));
+if (sections.length) {
+  let scheduled = false;
+  const updateActiveSection = () => {
+    scheduled = false;
+    const marker = window.scrollY + Math.min(260, window.innerHeight * .34);
+    let active = null;
+    sections.forEach(section => {
+      if (section.offsetTop <= marker) active = section;
+    });
+    if (window.scrollY + window.innerHeight >= document.documentElement.scrollHeight - 8) active = sections[sections.length - 1];
+    sectionLinks.forEach(link => link.classList.toggle('active', Boolean(active) && link.dataset.section === active.id));
+  };
+  const requestUpdate = () => {
+    if (scheduled) return;
+    scheduled = true;
+    requestAnimationFrame(updateActiveSection);
+  };
+  addEventListener('scroll', requestUpdate, { passive: true });
+  addEventListener('resize', requestUpdate);
+  addEventListener('hashchange', requestUpdate);
+  updateActiveSection();
 }
 
