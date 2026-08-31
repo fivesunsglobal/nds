@@ -6,3 +6,18 @@
 @media(max-width:620px){.d2-nav{width:100%;padding:0 12px;grid-template-columns:105px 1fr 38px}.nav-brand{font-size:.65rem}.language-link{width:36px}.d2-hero{padding:72px 0 85px}.d2-hero-grid{gap:35px}.d2-hero h1,.dai-hero h1{font-size:3.05rem}.d2-logo img{max-width:250px}.d2-program-grid,.offering-grid,.curriculum,.unlock-grid{grid-template-columns:1fr}.d2-feature{min-height:420px;padding:27px}.d2-program-card,.portfolio-item{padding:27px}.why-studio{gap:20px}.nexus{padding:28px 22px}.d2-profile{gap:30px}.d2-profile>img{order:-1;width:min(75vw,290px)}.offering-grid .pending{grid-column:auto}.unlock-grid article{border-right:0}.register-grid h2,.program-cta h2{font-size:3rem}.page-hero{padding:76px 0}.page-hero h1{font-size:3.3rem}}
 @media(prefers-reduced-motion:reduce){.reveal-item{opacity:1;transform:none;transition:none}}
 
+/* Navigation and hero corrections after review. */
+.d2-links a:hover{color:var(--navy)!important;background:transparent!important}
+.d2-links a.active{color:var(--navy)!important;background:var(--yellow)!important;border-radius:999px}
+.d2-links a.active:after{display:none!important}
+.d2-hero>.signal-horizon{display:none}
+.dai-subnav{position:sticky;top:74px;z-index:18;background:var(--midnight);border-bottom:1px solid rgba(255,255,255,.16)}
+.dai-subnav>.wrap{display:flex;align-items:center;justify-content:space-between;gap:25px;min-height:52px}
+.dai-subnav-title{color:#fff;font-weight:900;text-decoration:none;white-space:nowrap}
+.dai-subnav>div>div{display:flex;gap:4px;overflow-x:auto;scrollbar-width:none}
+.dai-subnav>div>div a{flex:0 0 auto;padding:8px 10px;border-radius:999px;color:#9faec2;font-size:.72rem;font-weight:800;text-decoration:none}
+.dai-subnav>div>div a:hover{color:#fff}
+.dai-subnav>div>div a.active{background:var(--yellow);color:var(--navy)}
+@media(max-width:950px){.dai-subnav>.wrap{width:100%;padding:0 16px}.dai-subnav-title{font-size:.78rem}}
+@media(max-width:620px){.dai-subnav>.wrap{gap:14px}.dai-subnav>div>div a{padding:7px 8px;font-size:.68rem}}
+
