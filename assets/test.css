@@ -185,3 +185,17 @@
   .ideas-bridge{padding:32px 24px}
   .about-studio{margin-bottom:48px}
 }
+
+
+/* Copy-led draft: restore the four outcomes and the stronger live-site editorial rhythm. */
+.ideas-outcomes{grid-template-columns:repeat(4,minmax(0,1fr))}
+.ideas-why{margin-top:70px}
+.ideas-why .big-prose{font-size:1.08rem}
+.ideas-why .subsection-statement{margin-bottom:18px}
+@media(max-width:950px){
+  .ideas-outcomes{grid-template-columns:1fr 1fr}
+}
+@media(max-width:620px){
+  .ideas-outcomes{grid-template-columns:1fr}
+  .ideas-why{margin-top:52px}
+}
