@@ -17,7 +17,7 @@ if (sections.length && 'IntersectionObserver' in window) {
     if (!visible) return;
     sectionLinks.forEach(link => link.classList.toggle('active', link.dataset.section === visible.target.id));
     sectionLinks.find(link => link.classList.contains('active'))?.scrollIntoView({behavior: reducedMotion ? 'auto' : 'smooth', inline:'center', block:'nearest'});
-  }, { rootMargin: '-28% 0px -60% 0px', threshold: [0,.1,.25] });
+  }, { rootMargin: '-18% 0px -58% 0px', threshold: [0,.01,.1,.25] });
   sections.forEach(section => sectionObserver.observe(section));
 }
 
