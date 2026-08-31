@@ -18,6 +18,8 @@
 .dai-subnav>div>div a{flex:0 0 auto;padding:8px 10px;border-radius:999px;color:#9faec2;font-size:.72rem;font-weight:800;text-decoration:none}
 .dai-subnav>div>div a:hover{color:#fff}
 .dai-subnav>div>div a.active{background:var(--yellow);color:var(--navy)}
+.nexus>b{color:var(--yellow)}
+.why-now-section{background:#fff}
 @media(max-width:950px){.dai-subnav>.wrap{width:100%;padding:0 16px}.dai-subnav-title{font-size:.78rem}}
 @media(max-width:620px){.dai-subnav>.wrap{gap:14px}.dai-subnav>div>div a{padding:7px 8px;font-size:.68rem}}
 
