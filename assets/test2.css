@@ -22,6 +22,18 @@
 .why-now-section{background:#fff}
 .d2-feature{background-image:linear-gradient(180deg,rgba(6,21,46,.08) 0%,rgba(6,21,46,.58) 42%,rgba(6,21,46,.98) 78%),var(--dai-art);background-size:cover;background-position:68% center}
 .d2-feature:before{display:none}
+.experience-block{margin:30px 0 22px;padding-top:22px;border-top:1px solid var(--line)}
+.experience-block>p{margin:0 0 14px;color:#7b8798!important;font-size:.67rem;font-weight:900;letter-spacing:.14em;text-transform:uppercase}
+.experience-logos{display:flex;align-items:center;gap:12px 24px;flex-wrap:wrap;color:#526074}
+.experience-logos>span{display:inline-flex;align-items:center;min-height:34px;filter:grayscale(1);opacity:.82}
+.mark-ned{font-size:1.55rem;font-weight:950;letter-spacing:-.08em}
+.mark-interaction{font-size:1.08rem;font-weight:850;letter-spacing:-.04em}
+.mark-interaction span{color:#236ca8}
+.mark-georgetown{flex-direction:column;align-items:flex-start!important;font-family:Georgia,serif;font-size:.87rem;font-weight:800;letter-spacing:.05em;line-height:1}
+.mark-georgetown small{font-family:Arial,sans-serif;font-size:.48rem;letter-spacing:.2em;margin-top:4px}
+.mark-peacecorps{padding-left:13px;border-left:4px solid #337a95;font-size:.76rem;font-weight:900;letter-spacing:.08em}
+.mark-dai{font-size:1.35rem;font-weight:950;letter-spacing:.04em}
+.register-section{background:var(--navy)}
 @media(max-width:950px){.dai-subnav>.wrap{width:100%;padding:0 16px}.dai-subnav-title{font-size:.78rem}}
 @media(max-width:620px){.dai-subnav>.wrap{gap:14px}.dai-subnav>div>div a{padding:7px 8px;font-size:.68rem}}
 
