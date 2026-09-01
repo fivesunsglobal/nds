@@ -20,6 +20,8 @@
 .dai-subnav>div>div a.active{background:var(--yellow);color:var(--navy)}
 .nexus>b{color:var(--yellow)}
 .why-now-section{background:#fff}
+.d2-feature{background-image:linear-gradient(180deg,rgba(6,21,46,.08) 0%,rgba(6,21,46,.58) 42%,rgba(6,21,46,.98) 78%),var(--dai-art);background-size:cover;background-position:68% center}
+.d2-feature:before{display:none}
 @media(max-width:950px){.dai-subnav>.wrap{width:100%;padding:0 16px}.dai-subnav-title{font-size:.78rem}}
 @media(max-width:620px){.dai-subnav>.wrap{gap:14px}.dai-subnav>div>div a{padding:7px 8px;font-size:.68rem}}
 
