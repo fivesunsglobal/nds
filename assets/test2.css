@@ -29,8 +29,6 @@
 .mark-ned{font-size:1.55rem;font-weight:950;letter-spacing:-.08em}
 .mark-interaction{font-size:1.08rem;font-weight:850;letter-spacing:-.04em}
 .mark-interaction span{color:#236ca8}
-.mark-georgetown{flex-direction:column;align-items:flex-start!important;font-family:Georgia,serif;font-size:.87rem;font-weight:800;letter-spacing:.05em;line-height:1}
-.mark-georgetown small{font-family:Arial,sans-serif;font-size:.48rem;letter-spacing:.2em;margin-top:4px}
 .mark-peacecorps{padding-left:13px;border-left:4px solid #337a95;font-size:.76rem;font-weight:900;letter-spacing:.08em}
 .mark-dai{font-size:1.35rem;font-weight:950;letter-spacing:.04em}
 .register-section{background:var(--navy)}
@@ -45,9 +43,10 @@
 .experience-logos .logo-ned{width:140px;height:auto}
 .experience-logos .logo-interaction{width:78px;max-height:52px}
 .experience-logos .logo-dai{width:105px}
+.experience-logos .logo-georgetown{width:100px;max-height:66px}
+.experience-logos .logo-csint{width:138px;max-height:66px}
 .logo-peacecorps{display:inline-flex!important;align-items:center;justify-content:center;min-height:0!important;padding:8px 12px;border-radius:6px;background:#172f55;filter:none!important;opacity:1!important}
 .logo-peacecorps .experience-logo{width:115px;max-height:32px;opacity:1}
-.mark-georgetown{min-height:42px!important;color:#041e42;filter:none!important;opacity:.9!important}
 
 .cohort-section{background:#f8efe8}
 .cohort-sales-top{display:grid;grid-template-columns:1.05fr .95fr;gap:52px;align-items:stretch}
@@ -104,6 +103,8 @@
   .experience-logos .logo-ned{width:118px}
   .experience-logos .logo-interaction{width:65px}
   .experience-logos .logo-dai{width:88px}
+  .experience-logos .logo-georgetown{width:82px}
+  .experience-logos .logo-csint{width:118px}
   .cohort-proof{padding:20px}
   .proof-metrics,.learning-objectives,.cohort-timeline,.cohort-support{grid-template-columns:1fr}
   .facilitator-card{grid-template-columns:1fr;padding:24px}
