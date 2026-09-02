@@ -229,3 +229,21 @@
   .grounding-links>span{width:100%;margin-bottom:7px}
 }
 
+/* Draft 2.4: bilingual navigation cues and homepage democratic-renewal narrative. */
+.d2-nav{grid-template-columns:165px 1fr auto}
+.language-link{width:auto;min-width:66px;padding:0 10px;gap:6px}
+.language-link:before{font-size:1rem;line-height:1}
+.language-link[hreflang="es"]:before{content:"🇪🇸"}
+.language-link[hreflang="en"]:before{content:"🇺🇸"}
+.home-why{--dai-violet:#5727b7;--dai-hot-pink:#d83596;--dai-gold:#ffc83d;--dai-electric:#20c9e8;background:#fbfaf7}
+.home-why .d2-section-head{max-width:1000px}
+.home-why .narrative-copy a{color:var(--blue);font-weight:800;text-decoration-thickness:1px;text-underline-offset:3px}
+.home-why .narrative-copy a:hover{color:var(--dai-violet)}
+.home-renewal{border-top-color:var(--yellow)}
+.home-renewal>span{color:var(--cyan)}
+@media(max-width:950px){.d2-nav{grid-template-columns:130px 1fr auto}}
+@media(max-width:620px){
+  .d2-nav{grid-template-columns:105px 1fr auto}
+  .language-link{min-width:58px;padding:0 7px;font-size:.7rem}
+}
+
