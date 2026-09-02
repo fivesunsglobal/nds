@@ -279,3 +279,6 @@
   .dai-page .facilitator-card:after{left:0;right:0;top:auto;width:auto;height:6px;background:linear-gradient(90deg,var(--dai-electric),var(--dai-violet),var(--dai-hot-pink),var(--dai-gold))}
 }
 
+
+/* Compact objectives intro after removing redundant explanatory copy. */
+@media(min-width:951px){.learning-block.objectives-only{grid-template-columns:200px minmax(0,1fr);gap:45px}}
