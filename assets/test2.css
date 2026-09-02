@@ -196,3 +196,36 @@
   .dai-unlock:before{width:100vw;opacity:.35}
 }
 
+/* Draft 2.3: narrative grounding for Why Democracy+AI. */
+.dai-narrative{display:grid;grid-template-columns:minmax(0,1.28fr) minmax(300px,.72fr);gap:68px;align-items:start;margin-top:6px}
+.narrative-copy{position:relative;padding-left:34px;border-left:2px solid #dce3ee}
+.narrative-copy:before{content:"";position:absolute;left:-4px;top:0;width:6px;height:29%;border-radius:99px;background:linear-gradient(180deg,var(--dai-electric),var(--dai-violet))}
+.narrative-copy p{margin:0;padding:0 0 28px;color:#4f5e73;font-size:1.08rem;line-height:1.72}
+.narrative-copy p:last-child{padding-bottom:0}
+.narrative-copy strong{color:var(--navy);font-weight:900}
+.dai-opening{position:sticky;top:158px;padding:38px 36px;border-top:6px solid var(--dai-gold);border-radius:0 0 18px 18px;background:#081a39;color:#fff;box-shadow:0 22px 48px rgba(11,29,58,.15)}
+.dai-opening:before{content:"";position:absolute;inset:0;pointer-events:none;opacity:.34;background:repeating-linear-gradient(118deg,transparent 0 42px,rgba(32,201,232,.13) 43px 44px)}
+.dai-opening>*{position:relative}
+.dai-opening>span{display:block;margin-bottom:22px;color:var(--dai-electric);font-size:.67rem;font-weight:900;letter-spacing:.15em;text-transform:uppercase}
+.dai-opening h3{margin-bottom:23px;color:#fff;font-size:2.05rem;line-height:1.08}
+.dai-opening p{color:#c2d0e2;line-height:1.62}
+.dai-opening p:last-child{margin-bottom:0;color:#fff}
+.grounding-links{display:flex;align-items:center;gap:9px;flex-wrap:wrap;margin-top:55px;padding-top:24px;border-top:1px solid #dce3ee}
+.grounding-links>span{margin-right:10px;color:#66758a;font-size:.66rem;font-weight:900;letter-spacing:.12em;text-transform:uppercase}
+.grounding-links a{display:inline-flex;align-items:center;padding:7px 11px;border:1px solid #d5dde9;border-radius:999px;background:#fff;color:#41536d;font-size:.72rem;font-weight:800;text-decoration:none}
+.grounding-links a:after{content:"↗";margin-left:6px;color:var(--dai-violet)}
+.grounding-links a:hover{border-color:var(--dai-violet);color:var(--dai-violet)}
+@media(max-width:950px){
+  .dai-narrative{grid-template-columns:1fr;gap:45px}
+  .dai-opening{position:relative;top:auto;max-width:720px}
+}
+@media(max-width:620px){
+  .dai-narrative{gap:34px}
+  .narrative-copy{padding-left:22px}
+  .narrative-copy p{font-size:1rem}
+  .dai-opening{padding:30px 26px}
+  .dai-opening h3{font-size:1.75rem}
+  .grounding-links{align-items:flex-start}
+  .grounding-links>span{width:100%;margin-bottom:7px}
+}
+
