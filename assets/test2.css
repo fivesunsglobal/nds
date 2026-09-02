@@ -247,3 +247,11 @@
   .language-link{min-width:58px;padding:0 7px;font-size:.7rem}
 }
 
+/* Draft 2.5: reliable flag artwork and flexible cohort interest state. */
+.language-link:before{content:none!important}
+.language-flag{display:block;width:20px;height:14px;object-fit:cover;border-radius:2px;box-shadow:0 0 0 1px rgba(11,29,58,.16)}
+.timeline-date strong{max-width:92px;text-align:right;line-height:1.2}
+.price-card.interest-card>strong{margin:8px 0 12px;font-size:clamp(2.2rem,4vw,3.3rem);line-height:1.02}
+.price-card.interest-card>span{display:block;margin-bottom:22px}
+.price-card.interest-card small{margin-top:0}
+
