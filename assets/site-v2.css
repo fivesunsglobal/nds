@@ -282,3 +282,6 @@
 
 /* Compact objectives intro after removing redundant explanatory copy. */
 @media(min-width:951px){.learning-block.objectives-only{grid-template-columns:200px minmax(0,1fr);gap:45px}}
+
+/* Publication contribution labels */
+.publication-card .publication-role{display:inline;color:var(--blue);font-size:inherit;font-weight:900}
