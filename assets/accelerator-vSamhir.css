@@ -1,0 +1,14 @@
+/* vSamhir v1: color supports the content; neon is reserved for actions and graphics. */
+h1 em,h2 em,.hero h1 em,.included-section h2 em,.community-section h2 em{color:inherit;text-shadow:none}
+.eyebrow,.session-host,.card-index,.mini-label,.faculty-photo>span:last-of-type{color:#c5d4e9}
+.why-section .eyebrow,.sessions-section .eyebrow,.pathways-section .eyebrow,.future-section .eyebrow{color:#42516b}
+.why-section h2 em,.sessions-section h2 em{color:inherit}
+.check,.inclusion-grid li:nth-child(3n + 2) .check,.inclusion-grid li:nth-child(3n) .check{color:#e4ebf7;border-color:#94a7bf;box-shadow:none}
+.faculty-copy .faculty-focus{color:#d9e4f3!important}
+.price-card .mini-label{color:#d9e4f3}
+.objectives li::marker{color:inherit}
+.text-link{color:inherit;text-decoration:underline;text-decoration-thickness:1px}
+.button-primary{background:var(--cyan);color:var(--night)}
+.floating-apply{box-shadow:4px 4px 0 var(--pink),0 0 22px rgba(83,245,239,.25)}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
