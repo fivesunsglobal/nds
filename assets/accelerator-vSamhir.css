@@ -15,6 +15,8 @@ h1 em,h2 em,.hero h1 em,.included-section h2 em,.community-section h2 em{color:i
 .application-timeline .price-detail span:last-child{max-width:58%}
 .application-timeline small{color:#aebed5;font-size:.72rem}
 .price-card .price-footnote{font-size:.92rem!important;font-weight:850;color:#fff!important;letter-spacing:.01em}
+.price-terms{margin-top:12px!important;text-align:center;font-size:.71rem!important;color:#aebed5!important}
+.price-terms a{color:inherit}
 .objectives li::marker{color:inherit}
 .text-link{color:inherit;text-decoration:underline;text-decoration-thickness:1px}
 .button-primary{background:var(--cyan);color:var(--night)}
@@ -79,8 +81,27 @@ h1 em,h2 em,.hero h1 em,.included-section h2 em,.community-section h2 em{color:i
 .community-intro{max-width:430px;margin-top:18px;color:#bcc9df;font-size:.93rem}
 .community-program-link{color:var(--cyan);text-decoration:underline;text-decoration-thickness:1px}
 .community-details article>.community-bullet{width:8px;height:8px;margin-top:8px;border-radius:50%;background:var(--pink);box-shadow:0 0 0 4px rgba(255,102,200,.12);flex:none}
+.terms-modal{width:min(940px,calc(100% - 36px));max-width:none;max-height:min(88vh,900px);padding:0;border:1px solid #8da6c4;border-radius:12px;background:#f7f9fd;color:var(--ink);box-shadow:0 24px 90px rgba(0,0,0,.55);overflow:hidden}
+.terms-modal::backdrop{background:rgba(4,13,28,.78);backdrop-filter:blur(5px)}
+.terms-modal-panel{max-height:min(88vh,900px);overflow:auto;overscroll-behavior:contain}
+.terms-modal-header{position:sticky;z-index:2;top:0;display:flex;align-items:center;justify-content:space-between;gap:20px;padding:14px 22px;background:#0d203c;color:#fff;border-bottom:1px solid #294361}
+.terms-modal-header>span{font-size:.66rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:#c5d4e9}
+.terms-close{display:inline-flex;align-items:center;gap:9px;padding:7px 10px;border:1px solid #59708d;border-radius:5px;background:transparent;color:#fff;font-size:.72rem;font-weight:750}
+.terms-close span{font-size:1.1rem;line-height:1}
+.terms-modal-body{padding:38px 42px 44px}
+.terms-modal-body>.eyebrow{color:#6551ac;margin-bottom:11px}
+.terms-modal h2{font-size:clamp(2.2rem,4vw,3.5rem);color:var(--ink);max-width:700px}
+.terms-effective{margin-top:9px;color:#68778d;font-size:.74rem;font-weight:700}
+.terms-summary{margin-top:24px;padding:18px 20px;border-left:4px solid #6e59a8;background:#eef2fb;color:#263a55;font-size:.94rem}
+.terms-summary a,.terms-contact a{color:#126b7a;font-weight:750}
+.terms-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:24px}
+.terms-grid section{padding:20px;background:#fff;border:1px solid #d7e1ee;border-radius:8px}
+.terms-grid h3,.terms-contact h3{font:750 1rem/1.35 Inter,"Segoe UI",sans-serif;letter-spacing:-.01em;color:#20344f;margin:0 0 9px}
+.terms-grid p,.terms-contact p{color:#4b5d74;font-size:.82rem;line-height:1.62}
+.terms-grid p+p{margin-top:9px}
+.terms-contact{margin-top:18px;padding:22px 24px;background:#e8f1fc;border-top:3px solid #16828a;border-radius:7px}
 @media(max-width:1050px){.curriculum-grid{grid-template-columns:repeat(3,1fr)}.curriculum-card{min-height:215px}}
-@media(max-width:760px){.testimonial-section{padding:58px 0 54px}.featured-testimonial{padding-left:58px}.featured-quote-mark{top:29px;font-size:5rem}.featured-testimonial blockquote{font-size:clamp(1.5rem,6.4vw,2rem)}.testimonial-section:after{opacity:.5}.curriculum-grid{grid-template-columns:repeat(2,1fr)}.included-section{padding-block:64px}.included-section .inclusion-grid{grid-template-columns:1fr}.sessions-section{padding-block:64px}.sessions-section .session-timeline{margin-top:32px}.sessions-section .session-date{padding:12px 6px}.sessions-section .session-date b{font-size:2.1rem}.sessions-section .session-body{padding:18px 20px}.sessions-section .session-body h3{font-size:1.5rem}.session-details .objectives{grid-template-columns:1fr;gap:12px}}
+@media(max-width:760px){.testimonial-section{padding:58px 0 54px}.featured-testimonial{padding-left:58px}.featured-quote-mark{top:29px;font-size:5rem}.featured-testimonial blockquote{font-size:clamp(1.5rem,6.4vw,2rem)}.testimonial-section:after{opacity:.5}.curriculum-grid{grid-template-columns:repeat(2,1fr)}.included-section{padding-block:64px}.included-section .inclusion-grid{grid-template-columns:1fr}.sessions-section{padding-block:64px}.sessions-section .session-timeline{margin-top:32px}.sessions-section .session-date{padding:12px 6px}.sessions-section .session-date b{font-size:2.1rem}.sessions-section .session-body{padding:18px 20px}.sessions-section .session-body h3{font-size:1.5rem}.session-details .objectives{grid-template-columns:1fr;gap:12px}.terms-modal{width:calc(100% - 20px);max-height:92vh}.terms-modal-panel{max-height:92vh}.terms-modal-header{padding:12px 15px}.terms-modal-body{padding:28px 20px 32px}.terms-grid{grid-template-columns:1fr}.terms-grid section{padding:17px}.terms-summary{padding:16px}.terms-contact{padding:19px}}
 @media(max-width:460px){.curriculum-grid{grid-template-columns:1fr}.curriculum-card{min-height:0}.sessions-section .session-body{padding:17px 16px}.sessions-section .session-body h3{font-size:1.38rem}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 
