@@ -20,7 +20,12 @@ h1 em,h2 em,.hero h1 em,.included-section h2 em,.community-section h2 em{color:i
 .objectives li::marker{color:inherit}
 .text-link{color:inherit;text-decoration:underline;text-decoration-thickness:1px}
 .button-primary{background:var(--cyan);color:var(--night)}
-.floating-apply{box-shadow:4px 4px 0 var(--pink),0 0 22px rgba(83,245,239,.25)}
+.hero-apply-wrap{display:flex;flex-direction:column;align-items:center}
+.hero-apply-wrap small{margin-top:6px;color:#c5d4e9;font-size:.68rem;font-weight:700;letter-spacing:.02em}
+.floating-apply{flex-direction:column;gap:1px;box-shadow:4px 4px 0 var(--pink),0 0 22px rgba(83,245,239,.25)}
+.floating-apply-main{display:flex;align-items:center;gap:9px;font-size:.95rem!important;line-height:1.15}
+.floating-apply-main span{font-size:1.08em!important}
+.floating-apply small{font-size:.61rem;font-weight:800;letter-spacing:.025em;line-height:1.15;opacity:.72}
 .hero-facts{max-width:1050px;gap:24px}
 .hero-facts span{flex:1 1 0;min-width:165px}
 .testimonial-section{position:relative;overflow:hidden;background:#fff;color:var(--ink);padding:74px 0 70px;border-bottom:1px solid #dce5f1}
@@ -103,5 +108,6 @@ h1 em,h2 em,.hero h1 em,.included-section h2 em,.community-section h2 em{color:i
 @media(max-width:1050px){.curriculum-grid{grid-template-columns:repeat(3,1fr)}.curriculum-card{min-height:215px}}
 @media(max-width:760px){.testimonial-section{padding:58px 0 54px}.featured-testimonial{padding-left:58px}.featured-quote-mark{top:29px;font-size:5rem}.featured-testimonial blockquote{font-size:clamp(1.5rem,6.4vw,2rem)}.testimonial-section:after{opacity:.5}.curriculum-grid{grid-template-columns:repeat(2,1fr)}.included-section{padding-block:64px}.included-section .inclusion-grid{grid-template-columns:1fr}.sessions-section{padding-block:64px}.sessions-section .session-timeline{margin-top:32px}.sessions-section .session-date{padding:12px 6px}.sessions-section .session-date b{font-size:2.1rem}.sessions-section .session-body{padding:18px 20px}.sessions-section .session-body h3{font-size:1.5rem}.session-details .objectives{grid-template-columns:1fr;gap:12px}.terms-modal{width:calc(100% - 20px);max-height:92vh}.terms-modal-panel{max-height:92vh}.terms-modal-header{padding:12px 15px}.terms-modal-body{padding:28px 20px 32px}.terms-grid{grid-template-columns:1fr}.terms-grid section{padding:17px}.terms-summary{padding:16px}.terms-contact{padding:19px}}
 @media(max-width:460px){.curriculum-grid{grid-template-columns:1fr}.curriculum-card{min-height:0}.sessions-section .session-body{padding:17px 16px}.sessions-section .session-body h3{font-size:1.38rem}}
+@media(max-width:460px){.hero-apply-wrap{display:none}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 
