@@ -12,14 +12,46 @@
   let currentStep = 0;
 
   const familiarity = [
-    ['none', 'No experience'],
-    ['heard', 'Heard about'],
-    ['rarely', 'Use rarely'],
-    ['regularly', 'Use regularly'],
-    ['heavily', 'Use heavily']
+    ['none', 'No experience', 'None'],
+    ['heard', 'Heard about', 'Heard'],
+    ['rarely', 'Use rarely', 'Rarely'],
+    ['regularly', 'Use regularly', 'Regularly'],
+    ['heavily', 'Use heavily', 'Heavily']
   ];
+  document.querySelectorAll('.matrix-block table').forEach(table => {
+    const heading = table.querySelector('thead tr');
+    const firstHeading = heading.querySelector('th');
+    heading.innerHTML = '';
+    heading.append(firstHeading);
+    familiarity.forEach(([, label]) => {
+      const th = document.createElement('th');
+      th.scope = 'col';
+      th.textContent = label;
+      heading.append(th);
+    });
+  });
   document.querySelectorAll('[data-familiarity]').forEach(select => {
-    familiarity.forEach(([value, label]) => select.add(new Option(label, value)));
+    const row = select.closest('tr');
+    const question = row.querySelector('th').textContent.trim();
+    const cell = select.closest('td');
+    familiarity.forEach(([value, label, shortLabel], index) => {
+      const choiceCell = document.createElement('td');
+      const choice = document.createElement('label');
+      choice.className = 'matrix-radio';
+      const input = document.createElement('input');
+      input.type = 'radio';
+      input.name = select.name;
+      input.value = value;
+      input.required = select.required && index === 0;
+      input.setAttribute('aria-label', `${question}: ${label}`);
+      const marker = document.createElement('span');
+      marker.setAttribute('aria-hidden', 'true');
+      marker.dataset.shortLabel = shortLabel;
+      choice.append(input, marker);
+      choiceCell.append(choice);
+      row.insertBefore(choiceCell, cell);
+    });
+    cell.remove();
   });
 
   const words = value => value.trim() ? value.trim().split(/\s+/).length : 0;
