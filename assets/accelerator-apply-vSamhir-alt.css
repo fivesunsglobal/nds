@@ -30,6 +30,7 @@
 .sidebar-card .mini-label{color:#6551ac;margin-bottom:8px;font-size:.59rem}
 .sidebar-card strong{display:block;color:#203653;font-size:.86rem}
 .sidebar-card p{margin-top:5px;color:#617087;font-size:.76rem;line-height:1.55}
+.sidebar-card .calendar-link{display:inline-block;margin-top:11px;color:#176c7a;font-size:.72rem;font-weight:800;line-height:1.4}
 .privacy-card{border-left:3px solid #19838a}
 .privacy-card a,.sidebar-help a{color:#176c7a;font-weight:750}
 .sidebar-help{padding:15px 5px 0;color:#607087;font-size:.75rem}
@@ -115,3 +116,4 @@
 @media(max-width:460px){.apply-header .back-link{font-size:.68rem}.apply-hero h1{font-size:2.65rem}.apply-hero .lead{font-size:.98rem}.application-card{border-radius:8px}.form-step{padding:25px 18px}.form-progress-copy{padding:11px 18px;font-size:.62rem}.form-progress-copy span:last-child{display:none}.form-step legend strong{font-size:2.1rem}.comfort-scale{grid-template-columns:1fr}.comfort-scale span{min-height:0;flex-direction:row;align-items:center;gap:10px}.comfort-scale span b{margin:0}.question-block{padding:18px 15px}.matrix-block th,.matrix-block td{padding:9px 10px}.step-actions .button{min-width:0;padding:13px 17px}.final-actions{align-items:stretch}.final-actions .button{flex:1}.form-status{text-align:center}.site-footer nav{flex-wrap:wrap}}
 @media(max-width:600px){.matrix-block table{display:block;min-width:0}.matrix-block thead{display:none}.matrix-block tbody{display:block}.matrix-block tbody tr{display:grid;grid-template-columns:repeat(5,1fr);padding:12px 7px;border-top:1px solid #e0e7f0}.matrix-block tbody tr:first-child{border-top:0}.matrix-block tbody th{display:block;grid-column:1/-1;width:auto;padding:0 5px 9px;border:0}.matrix-block tbody td{display:block;padding:4px 1px 18px;border:0}.matrix-radio{position:relative}.matrix-radio span{position:relative}.matrix-radio span:after{content:attr(data-short-label);position:absolute;top:28px;left:50%;width:58px;transform:translateX(-50%);color:#6a788c;font-size:.52rem;font-weight:700;line-height:1.1;text-align:center}.matrix-radio input:checked+span:after{color:#126d74}}
 @media(prefers-reduced-motion:reduce){.form-progress span{transition:none}}
+

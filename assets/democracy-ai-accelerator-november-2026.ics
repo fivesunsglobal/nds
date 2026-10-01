@@ -1,0 +1,53 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//New Democracy Studio//Democracy+AI Accelerator//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Democracy+AI Accelerator — November 2026
+BEGIN:VEVENT
+UID:dai-accelerator-20261105@newdemocracystud.io
+DTSTAMP:20261001T190000Z
+DTSTART:20261105T190000Z
+DTEND:20261105T203000Z
+SUMMARY:Democracy+AI Accelerator — Foundations & Responsible AI
+LOCATION:Google Meet
+DESCRIPTION:Session 1 of 5. Google Meet details will be shared with enrolled participants.
+END:VEVENT
+BEGIN:VEVENT
+UID:dai-accelerator-20261112@newdemocracystud.io
+DTSTAMP:20261001T190000Z
+DTSTART:20261112T190000Z
+DTEND:20261112T203000Z
+SUMMARY:Democracy+AI Accelerator — Storytelling That Connects
+LOCATION:Google Meet
+DESCRIPTION:Session 2 of 5. Google Meet details will be shared with enrolled participants.
+END:VEVENT
+BEGIN:VEVENT
+UID:dai-accelerator-20261119@newdemocracystud.io
+DTSTAMP:20261001T190000Z
+DTSTART:20261119T190000Z
+DTEND:20261119T203000Z
+SUMMARY:Democracy+AI Accelerator — Make Sense of Your Data
+LOCATION:Google Meet
+DESCRIPTION:Session 3 of 5. Google Meet details will be shared with enrolled participants.
+END:VEVENT
+BEGIN:VEVENT
+UID:dai-accelerator-20261203@newdemocracystud.io
+DTSTAMP:20261001T190000Z
+DTSTART:20261203T190000Z
+DTEND:20261203T203000Z
+SUMMARY:Democracy+AI Accelerator — Automate the Repeatable Work
+LOCATION:Google Meet
+DESCRIPTION:Session 4 of 5. Google Meet details will be shared with enrolled participants.
+END:VEVENT
+BEGIN:VEVENT
+UID:dai-accelerator-20261210@newdemocracystud.io
+DTSTAMP:20261001T190000Z
+DTSTART:20261210T190000Z
+DTEND:20261210T203000Z
+SUMMARY:Democracy+AI Accelerator — AI Action Showcase
+LOCATION:Google Meet
+DESCRIPTION:Session 5 of 5. Google Meet details will be shared with enrolled participants.
+END:VEVENT
+END:VCALENDAR
+
