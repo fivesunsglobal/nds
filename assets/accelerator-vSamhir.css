@@ -31,7 +31,6 @@ h1 em,h2 em,.hero h1 em,.included-section h2 em,.community-section h2 em{color:i
 .hero-results a{display:block;color:#becde5;font-size:.76rem;line-height:1.4;text-decoration:none}
 .hero-results a:hover b{color:var(--yellow)}
 .hero-results b{display:block;margin-bottom:4px;color:var(--cyan);font-size:1rem;transition:color .18s}
-.hero-logistics{max-width:900px;margin-top:16px;color:#9fb2ce;font-size:.7rem;line-height:1.55}
 .approach-for-beginners{max-width:700px;margin-top:12px;color:#253a55;font-size:.93rem;line-height:1.58}
 .section-links{gap:14px}
 .section-links a{font-size:.68rem}
