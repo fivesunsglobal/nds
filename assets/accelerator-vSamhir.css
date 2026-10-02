@@ -1,6 +1,5 @@
 /* vSamhir v1: color supports the content; neon is reserved for actions and graphics. */
 h1 em,h2 em,.hero h1 em,.included-section h2 em,.community-section h2 em{color:inherit;text-shadow:none}
-.hero h1{font-family:Inter,"Segoe UI",system-ui,sans-serif;font-weight:800;letter-spacing:-.055em;line-height:.99}
 .eyebrow,.session-host,.card-index,.mini-label,.faculty-photo>span:last-of-type{color:#c5d4e9}
 .pathways-section .eyebrow,.future-section .eyebrow{color:#42516b}
 .sessions-section .eyebrow{color:var(--cyan)}
