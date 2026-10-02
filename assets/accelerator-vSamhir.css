@@ -62,7 +62,7 @@ h1 em,h2 em,.hero h1 em,.included-section h2 em,.community-section h2 em{color:i
 .curriculum-card{display:flex;flex-direction:column;min-height:238px;padding:24px 20px 21px}
 .curriculum-card h3{max-width:none;margin:22px 0 11px;font-size:1.12rem}
 .curriculum-card p{font-size:.82rem;line-height:1.55}
-.included-section{padding-block:78px;background:#eef3fc;color:var(--ink);border-color:#d7e1ee}
+.included-section{padding-block:78px;background:#fff;color:var(--ink);border-color:#d7e1ee}
 .included-section .eyebrow{color:#6551ac}
 .included-section .section-heading .lead{color:#4e5d75}
 .included-section .section-heading{margin-bottom:30px}
