@@ -47,7 +47,15 @@
     document.documentElement.style.setProperty('--header-height', headerHeight + 'px');
     const marker = headerHeight + Math.min(140, innerHeight * 0.2);
     let active = -1;
-    sections.forEach((section, i) => { if (section.getBoundingClientRect().top <= marker) active = i; });
+    let activeTop = -Infinity;
+    sections.forEach((section, i) => {
+      if (!section) return;
+      const top = section.getBoundingClientRect().top;
+      if (top <= marker && top > activeTop) {
+        active = i;
+        activeTop = top;
+      }
+    });
     links.forEach((link, i) => {
       link.classList.toggle('active', i === active);
       if (i === active) link.setAttribute('aria-current', 'location');
