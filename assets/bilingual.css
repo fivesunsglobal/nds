@@ -18,3 +18,32 @@
 
 .site-header .language-link{color:#fff;border-color:rgba(255,255,255,.65)}
 .site-header .language-link:hover,.site-header .language-link:focus-visible{color:var(--yellow,#ffd34d);border-color:var(--yellow,#ffd34d)}
+
+/* Match the main site's white navigation on accelerator, application, and legal pages. */
+.global-header{background:rgba(255,255,255,.96);color:#0b1d3a;border-bottom:1px solid rgba(11,29,58,.08);backdrop-filter:blur(12px)}
+.global-header .global-nav{display:grid;grid-template-columns:165px minmax(0,1fr) auto;gap:24px;align-items:center;min-height:74px;width:min(calc(100% - 96px),1180px);margin-inline:auto}
+.global-header .global-brand{display:grid;line-height:1.05;font-size:.72rem;letter-spacing:.08em;text-decoration:none;color:#0b1d3a;white-space:nowrap}
+.global-header .global-brand strong{font-size:.84rem}
+.global-header .global-links{display:flex;align-items:center;justify-content:flex-end;gap:4px;min-width:0}
+.global-header .global-links a{flex:none;padding:10px 11px;color:#9299a5;font-size:.9rem;font-weight:700;line-height:1.55;text-decoration:none;white-space:nowrap}
+.global-header .global-links a:hover{color:#0b1d3a}
+.global-header .global-links a.active{color:#0b1d3a;background:var(--yellow,#ffc72c);border-radius:999px}
+.global-header .language-link{color:#0b1d3a;border-color:#c9d2df;background:#fff}
+.global-header .language-link:hover,.global-header .language-link:focus-visible{color:#0b1d3a;border-color:#0b1d3a}
+.global-header .section-nav{background:#071327;color:#fff}
+.global-header .application-back-nav{background:#071327;border-top:1px solid rgba(174,202,239,.22)}
+.global-header .application-back-nav .shell{display:flex;align-items:center;min-height:48px;width:min(calc(100% - 96px),1180px)}
+.global-header .application-back-nav .back-link{color:#d6e2f4;font-size:.85rem;font-weight:700;text-decoration:none}
+.global-header .application-back-nav .back-link:hover{color:var(--yellow,#ffd34d)}
+@media(max-width:950px){
+  .global-header .global-nav{grid-template-columns:130px minmax(0,1fr) auto;gap:10px}
+  .global-header .global-links{overflow-x:auto;justify-content:flex-start;scrollbar-width:none}
+  .global-header .global-links::-webkit-scrollbar{display:none}
+  .global-header .global-links a{padding:9px 8px;font-size:.72rem}
+}
+@media(max-width:620px){
+  .global-header .global-nav{width:100%;padding:0 12px;grid-template-columns:105px minmax(0,1fr) auto}
+  .global-header .global-brand{font-size:.65rem}
+  .global-header .language-link{min-width:58px;padding:0 7px;font-size:.7rem}
+  .global-header .application-back-nav .shell{width:calc(100% - 24px)}
+}
