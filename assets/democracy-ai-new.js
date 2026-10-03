@@ -83,17 +83,17 @@
       if (!form.reportValidity() || button.disabled) return;
       button.disabled = true;
       status.classList.remove('error');
-      status.textContent = 'Sending…';
+      status.textContent = document.documentElement.lang === 'es' ? 'Enviando…' : 'Sending…';
       try {
         const response = await fetch(form.action, { method: 'POST', body: new FormData(form), headers: { Accept: 'application/json' } });
         if (!response.ok) throw new Error('Submission failed');
         track('form_submit_success', { form_kind: 'future_interest' });
-        status.textContent = 'Thank you. We will share relevant opportunities with you.';
+        status.textContent = document.documentElement.lang === 'es' ? 'Gracias. Te informaremos sobre las oportunidades pertinentes.' : 'Thank you. We will share relevant opportunities with you.';
         form.reset();
       } catch {
         track('form_submit_error', { form_kind: 'future_interest' });
         status.classList.add('error');
-        status.textContent = 'Your message could not be sent. Please try again. Your entries have been kept.';
+        status.textContent = document.documentElement.lang === 'es' ? 'No se pudo enviar tu mensaje. Inténtalo de nuevo; tus respuestas se han conservado.' : 'Your message could not be sent. Please try again. Your entries have been kept.';
       } finally { button.disabled = false; }
     });
   }
