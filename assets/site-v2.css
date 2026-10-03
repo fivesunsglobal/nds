@@ -285,3 +285,8 @@
 
 /* Publication contribution labels */
 .publication-card .publication-role{display:inline;color:var(--blue);font-size:inherit;font-weight:900}
+
+/* Give selected publications the full profile width on both homepages. */
+.site-v2 .d2-profile{row-gap:28px}
+.site-v2 .d2-profile>.publication-block{grid-column:1/-1;margin-top:0}
+@media(min-width:1021px){.site-v2 .d2-profile>.publication-block .publication-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
