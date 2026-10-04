@@ -67,12 +67,54 @@ if (interestSelect) {
   if (requestedInterest) setInterest(requestedInterest);
   document.querySelectorAll('[data-interest-target]').forEach(link => link.addEventListener('click', () => setInterest(link.dataset.interestTarget)));
   const form = interestSelect.closest('form');
-  if (form) form.addEventListener('submit', () => {
-    const formType = form.querySelector('input[name="form_type"]');
-    if (!formType) return;
-    const base = formType.dataset.baseValue || formType.value;
-    formType.dataset.baseValue = base;
-    formType.value = `${base} | Interest: ${interestSelect.options[interestSelect.selectedIndex].text}`;
-  });
+  if (form) {
+    let status = form.querySelector('[data-contact-status]');
+    if (!status) {
+      status = document.createElement('p');
+      status.dataset.contactStatus = '';
+      status.className = 'form-status';
+      status.setAttribute('role', 'status');
+      status.tabIndex = -1;
+      form.append(status);
+    }
+    form.addEventListener('submit', async event => {
+      event.preventDefault();
+      const formType = form.querySelector('input[name="form_type"]');
+      if (formType) {
+        const base = formType.dataset.baseValue || formType.value;
+        formType.dataset.baseValue = base;
+        formType.value = `${base} | Interest: ${interestSelect.options[interestSelect.selectedIndex].text}`;
+      }
+      const submit = form.querySelector('button[type="submit"]');
+      submit.disabled = true;
+      status.classList.remove('error');
+      status.textContent = isSpanish ? 'Enviando…' : 'Sending…';
+      try {
+        const response = await fetch(form.action, {
+          method: 'POST',
+          body: new FormData(form),
+          headers: { Accept: 'application/json' }
+        });
+        if (!response.ok) throw new Error('Submission failed');
+        window.ndsTrack?.('contact_form_submit', {
+          form_id: 'general_inquiry',
+          interest_category: interestSelect.value,
+          page_language: isSpanish ? 'es' : 'en'
+        });
+        status.textContent = isSpanish
+          ? 'Gracias. Hemos recibido tu mensaje y responderemos pronto.'
+          : 'Thank you. We received your message and will respond soon.';
+        form.reset();
+        status.focus();
+      } catch {
+        status.classList.add('error');
+        status.textContent = isSpanish
+          ? 'No se pudo enviar tu mensaje. Inténtalo de nuevo.'
+          : 'Your message could not be sent. Please try again.';
+      } finally {
+        submit.disabled = false;
+      }
+    });
+  }
 }
 

@@ -12,6 +12,18 @@
   const progressLabel = document.querySelector('[data-progress-label]');
   const success = document.querySelector('[data-form-success]');
   let currentStep = 0;
+  let applicationStarted = false;
+  const applicationEventParams = {
+    form_id: 'accelerator_nov26',
+    page_language: 'es'
+  };
+  const markApplicationStarted = () => {
+    if (applicationStarted) return;
+    applicationStarted = true;
+    window.ndsTrack?.('application_start', applicationEventParams);
+  };
+  form.addEventListener('input', markApplicationStarted);
+  form.addEventListener('change', markApplicationStarted);
 
   const familiarity = [
     ['1', '1 · Nada familiarizado', '1 · Nada'],
@@ -152,6 +164,7 @@
     }
     const submit = form.querySelector('button[type="submit"]');
     const status = form.querySelector('[data-form-status]');
+    window.ndsTrack?.('application_submit_attempt', applicationEventParams);
     submit.disabled = true;
     status.classList.remove('error');
     status.textContent = 'Enviando tu solicitud…';
@@ -166,6 +179,7 @@
       document.querySelector('.form-progress-copy').hidden = true;
       success.hidden = false;
       success.focus();
+      window.ndsTrack?.('application_complete', applicationEventParams);
     } catch {
       status.classList.add('error');
       status.textContent = 'No se pudo enviar tu solicitud. Inténtalo de nuevo; tus respuestas se han conservado.';
