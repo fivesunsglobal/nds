@@ -4,6 +4,8 @@
   const form = document.querySelector('[data-application-form]');
   if (!form) return;
 
+  form.elements.form_started_at.value = String(Date.now());
+
   const steps = [...form.querySelectorAll('[data-step]')];
   const navButtons = [...document.querySelectorAll('[data-step-nav]')];
   const progressBar = document.querySelector('[data-progress-bar]');
@@ -154,8 +156,11 @@
     status.classList.remove('error');
     status.textContent = 'Enviando tu solicitud…';
     try {
-      const response = await fetch(form.action, { method: 'POST', body: new FormData(form), headers: { Accept: 'application/json' } });
-      if (!response.ok) throw new Error('Submission failed');
+      // Las aplicaciones web de Apps Script responden mediante una redirección de
+      // Google sin encabezados CORS. Una respuesta opaca confirma que el navegador
+      // entregó la solicitud al endpoint público.
+      const response = await fetch(form.action, { method: 'POST', body: new FormData(form), mode: 'no-cors' });
+      if (response.type !== 'opaque' && !response.ok) throw new Error('Submission failed');
       form.hidden = true;
       document.querySelector('.form-progress').hidden = true;
       document.querySelector('.form-progress-copy').hidden = true;

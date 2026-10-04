@@ -49,6 +49,7 @@
 .form-progress-copy{display:flex;justify-content:space-between;gap:20px;padding:15px 38px;border-bottom:1px solid #e0e7f0;color:#748298;font-size:.68rem;font-weight:700}
 .form-step{margin:0;padding:38px;border:0;min-width:0}
 .form-step[hidden]{display:none!important}
+.form-trap{position:absolute!important;left:-10000px!important;top:auto!important;width:1px!important;height:1px!important;overflow:hidden!important}
 .form-step legend{display:block;float:left;width:100%;padding:0}
 .step-kicker{display:block;margin-bottom:9px;color:#6551ac;font-size:.68rem;font-weight:850;letter-spacing:.13em;text-transform:uppercase}
 .form-step legend strong{display:block;font-family:Georgia,"Times New Roman",serif;color:#172a43;font-size:clamp(2rem,3.5vw,3.2rem);letter-spacing:-.035em;line-height:1.08}
