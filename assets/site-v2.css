@@ -293,21 +293,24 @@
 
 
 /* Homepage cohort promotion */
-
-.cohort-float-card{position:absolute;top:0;right:max(48px,calc((100vw - var(--max))/2));width:min(390px,calc(100vw - 96px));height:164px;display:grid;grid-template-columns:44% 56%;overflow:hidden;border:4px solid #fff;border-radius:24px;background:var(--midnight);box-shadow:0 20px 55px rgba(7,25,55,.28);text-decoration:none;transform:translateY(-50%);transition:transform .2s ease,box-shadow .2s ease}
-.cohort-float-card:hover{transform:translateY(calc(-50% - 4px));box-shadow:0 26px 64px rgba(7,25,55,.34)}
-.cohort-float-card:focus-visible{outline:4px solid var(--yellow);outline-offset:4px}
-.cohort-float-card>img{width:100%;height:100%;object-fit:cover}
-.cohort-float-card>span{display:flex;flex-direction:column;justify-content:center;padding:19px 18px;color:#fff;background:linear-gradient(145deg,#173869,var(--midnight))}
-.cohort-float-card small{color:var(--cyan);font-size:.58rem;font-weight:900;letter-spacing:.11em;line-height:1.25}
-.cohort-float-card strong{margin:8px 0 7px;color:#fff;font-family:Georgia,"Times New Roman",serif;font-size:1.38rem;line-height:1.05}
-.cohort-float-card em{color:var(--yellow);font-size:.72rem;font-style:normal;font-weight:900}
-.site-v2 .home-why{padding-top:132px}
+.cohort-transition{padding:38px 0;background:linear-gradient(180deg,#fff 0,#f4f7fb 100%)}
+.cohort-transition-card{display:grid;grid-template-columns:minmax(0,53%) minmax(0,47%);min-height:280px;overflow:hidden;padding:0;border-radius:30px;background:var(--midnight);box-shadow:0 22px 58px rgba(7,25,55,.2)}
+.cohort-transition-copy{display:flex;flex-direction:column;align-items:flex-start;justify-content:center;padding:42px 48px;color:#fff}
+.cohort-transition-copy .eyebrow{margin:0 0 12px;color:var(--cyan)}
+.cohort-transition-copy h2{max-width:650px;margin:0;color:#fff;font-family:Georgia,"Times New Roman",serif;font-size:clamp(2rem,3.5vw,3.35rem);line-height:1.02}
+.cohort-transition-copy>p:not(.eyebrow){max-width:610px;margin:16px 0 24px;color:#dfe9f8;font-size:1.02rem;line-height:1.55}
+.cohort-transition-copy .button{margin-top:0}
+.cohort-transition-art{position:relative;min-height:280px;overflow:hidden}
+.cohort-transition-art:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,var(--midnight) 0,transparent 24%)}
+.cohort-transition-art img{width:100%;height:100%;display:block;object-fit:cover;object-position:64% center}
+.site-v2 .home-why{padding-top:92px}
 .site-v2 .d2-feature h3{font-size:clamp(1.7rem,2.6vw,2.35rem);line-height:1.12}
-@media(max-width:620px){
-  
-  .cohort-float-card{position:relative;top:auto;right:auto;width:100%;height:142px;transform:none}
-  .cohort-float-card:hover{transform:translateY(-2px)}
-  .cohort-float-card strong{font-size:1.2rem}
+@media(max-width:760px){
+  .cohort-transition{padding:24px 16px}
+  .cohort-transition-card{grid-template-columns:1fr}
+  .cohort-transition-copy{padding:30px 26px 32px}
+  .cohort-transition-copy h2{font-size:clamp(1.85rem,8vw,2.65rem)}
+  .cohort-transition-art{min-height:190px;grid-row:1}
+  .cohort-transition-art:after{background:linear-gradient(0deg,var(--midnight) 0,transparent 34%)}
   .site-v2 .home-why{padding-top:72px}
 }
