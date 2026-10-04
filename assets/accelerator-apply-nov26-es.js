@@ -12,11 +12,11 @@
   let currentStep = 0;
 
   const familiarity = [
-    ['none', 'Sin experiencia', 'Ninguna'],
-    ['heard', 'He oído hablar', 'Conozco'],
-    ['rarely', 'Uso poco frecuente', 'Poco'],
-    ['regularly', 'Uso habitual', 'Habitual'],
-    ['heavily', 'Uso intensivo', 'Intensivo']
+    ['1', '1 · Nada familiarizado', '1 · Nada'],
+    ['2', '2', '2'],
+    ['3', '3', '3'],
+    ['4', '4', '4'],
+    ['5', '5 · Muy familiarizado', '5 · Mucho']
   ];
   document.querySelectorAll('.matrix-block table').forEach(table => {
     const heading = table.querySelector('thead tr');
@@ -77,6 +77,32 @@
     requiredTools.required = show;
     if (!show) requiredTools.value = '';
   });
+
+  const paidAccess = form.querySelector('[data-paid-access]');
+  const paidAccessDetail = paidAccess.querySelector('[data-paid-access-detail]');
+  const paidTools = paidAccessDetail.querySelector('input');
+  paidAccess.addEventListener('change', () => {
+    const show = form.elements.paid_ai_access.value === 'yes';
+    paidAccessDetail.hidden = !show;
+    paidTools.required = show;
+    if (!show) paidTools.value = '';
+  });
+
+  const attendanceBlock = form.querySelector('[data-attendance-block]');
+  const attendanceDiversion = form.querySelector('[data-attendance-diversion]');
+  const attendanceFollowup = form.querySelector('[data-attendance-followup]');
+  const attendanceFollowupFields = [...attendanceFollowup.querySelectorAll('input, select, textarea, button')];
+  const updateAttendancePath = () => {
+    const divert = form.elements.attendance.value === 'no';
+    attendanceDiversion.setAttribute('aria-hidden', String(!divert));
+    attendanceFollowupFields.forEach(field => { field.disabled = divert; });
+    if (divert) {
+      attendanceDiversion.focus();
+      attendanceDiversion.scrollIntoView({ behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth', block: 'center' });
+    }
+  };
+  attendanceBlock.addEventListener('change', updateAttendancePath);
+  updateAttendancePath();
 
   const showStep = (index, focus = true) => {
     currentStep = Math.max(0, Math.min(index, steps.length - 1));

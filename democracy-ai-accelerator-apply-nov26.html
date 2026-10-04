@@ -10,9 +10,9 @@
   <title>Apply — The Democracy+AI Accelerator</title>
   <link rel="icon" href="assets/favicon-32x32.png">
   <link rel="stylesheet" href="assets/democracy-ai-new.css?v=1">
-  <link rel="stylesheet" href="assets/accelerator-apply-vSamhir-alt.css?v=2">
+  <link rel="stylesheet" href="assets/accelerator-apply-nov26.css?v=1">
   <link rel="stylesheet" href="assets/bilingual.css?v=2">
-  <script src="assets/accelerator-apply-vSamhir-alt.js?v=2" defer></script>
+  <script src="assets/accelerator-apply-nov26.js?v=1" defer></script>
 </head>
 <body class="application-alt-page" data-page="application-nov26">
   <a class="skip-link" href="#application-form">Skip to application</a>
@@ -34,9 +34,9 @@
           <p class="lead">Tell us a little about your work and how you are using AI. Independent consultants and staff at organizations are both welcome.</p>
         </div>
         <div class="apply-meta" aria-label="Application details">
-          <span><b>About 5 minutes</b>A focused application</span>
+          <span><b>5–10 minutes</b>A focused application</span>
           <span><b>No payment required</b>Pay only after acceptance</span>
-          <span><b>Rolling review</b>Until October 26 or seats fill</span>
+          <span class="deadline-meta"><b>Apply by October 28</b>Rolling review · seats may fill sooner</span>
         </div>
       </div>
     </section>
@@ -49,9 +49,13 @@
             <li><button type="button" data-step-nav="0" aria-current="step"><span>01</span><b>About you</b></button></li>
             <li><button type="button" data-step-nav="1"><span>02</span><b>Your work</b></button></li>
             <li><button type="button" data-step-nav="2"><span>03</span><b>AI experience</b></button></li>
-            <li><button type="button" data-step-nav="3"><span>04</span><b>Tools &amp; techniques</b></button></li>
-            <li><button type="button" data-step-nav="4"><span>05</span><b>Logistics &amp; consent</b></button></li>
+            <li><button type="button" data-step-nav="3"><span>04</span><b>Logistics &amp; consent</b></button></li>
           </ol>
+          <div class="sidebar-card deadline-card">
+            <span class="mini-label">Application deadline</span>
+            <strong>Apply by October 28</strong>
+            <p>Applications are reviewed on a rolling basis and may close sooner if seats fill.</p>
+          </div>
           <div class="sidebar-card">
             <span class="mini-label">Program dates</span>
             <strong>Nov 5–Dec 10, 2026</strong>
@@ -60,8 +64,11 @@
           </div>
           <div class="sidebar-card fee-card">
             <span class="mini-label">Program fee</span>
-            <strong>$495 early bird</strong>
-            <p>Apply by October 16.<br>Standard price after that date: $645.<br>No payment required to apply.</p>
+            <div class="fee-options">
+              <div><strong>$495</strong><span>Early bird<br>by October 16</span></div>
+              <div><strong>$645</strong><span>After October 16</span></div>
+            </div>
+            <p class="fee-note">No payment required to apply.</p>
           </div>
           <div class="sidebar-card privacy-card">
             <span class="mini-label">Responsible data use</span>
@@ -73,7 +80,7 @@
 
         <div class="application-card">
           <div class="form-progress" aria-hidden="true"><span data-progress-bar></span></div>
-          <div class="form-progress-copy"><span data-progress-label>Step 1 of 5</span><span>Required fields are marked *</span></div>
+          <div class="form-progress-copy"><span data-progress-label>Step 1 of 4</span><span>Required fields are marked *</span></div>
 
           <form id="application-form" action="https://formspree.io/f/xzepwgqk" method="post" data-application-form novalidate>
             <input type="hidden" name="form_type" value="November 2026 Democracy+AI Accelerator application">
@@ -85,6 +92,10 @@
                 <label>Your email address <em>*</em><input type="email" name="email" autocomplete="email" required></label>
               </div>
               <label>Your LinkedIn profile<input type="url" name="linkedin" autocomplete="url" placeholder="https://linkedin.com/in/..."></label>
+              <div class="field-grid two-up">
+                <label>Your location (city and country) <em>*</em><input name="location" autocomplete="address-level2" placeholder="e.g., Nairobi, Kenya" required></label>
+                <label>Your time zone <em>*</em><input name="time_zone" placeholder="e.g., Bogotá / UTC−5" required></label>
+              </div>
               <div class="step-actions"><span></span><button class="button button-primary" type="button" data-next>Continue <span aria-hidden="true">→</span></button></div>
             </fieldset>
 
@@ -105,36 +116,17 @@
               <p class="step-intro">There is no “right” level. Honest answers help us shape the learning experience.</p>
 
               <div class="question-block">
-                <p class="question-label">How would you rate your comfort using generative AI tools in your work? <em>*</em></p>
+                <p class="question-label">How would you rate your comfort using generative AI tools (like ChatGPT, Claude, Gemini, or Copilot) in your work?</p>
                 <div class="comfort-scale" role="radiogroup" aria-label="Comfort using generative AI tools">
-                  <label><input type="radio" name="ai_comfort" value="1" required><span><b>1</b>Rarely or never used them</span></label>
-                  <label><input type="radio" name="ai_comfort" value="2"><span><b>2</b>Tried a few simple tasks</span></label>
-                  <label><input type="radio" name="ai_comfort" value="3"><span><b>3</b>Use them for everyday tasks</span></label>
-                  <label><input type="radio" name="ai_comfort" value="4"><span><b>4</b>Built reusable setups</span></label>
-                  <label><input type="radio" name="ai_comfort" value="5"><span><b>5</b>Build automations or tools</span></label>
+                  <label><input type="radio" name="ai_comfort" value="1"><span><b>1</b>I’ve rarely or never used them</span></label>
+                  <label><input type="radio" name="ai_comfort" value="2"><span><b>2</b>I’ve tried them for a few simple tasks</span></label>
+                  <label><input type="radio" name="ai_comfort" value="3"><span><b>3</b>I use them regularly for everyday tasks, like drafting or summarizing</span></label>
+                  <label><input type="radio" name="ai_comfort" value="4"><span><b>4</b>I’ve built reusable setups, like Skills, Gems, or Projects</span></label>
+                  <label><input type="radio" name="ai_comfort" value="5"><span><b>5</b>I build automations, agents, or AI-powered tools for others</span></label>
                 </div>
               </div>
-
-              <label>Share one way you have used AI in your work that you are particularly proud of. <small>Optional</small><textarea name="proud_ai_example" rows="5" data-word-limit="75"></textarea><span class="field-meta"><span>One or two sentences · 75 words maximum</span><span data-word-count>0 / 75</span></span></label>
-
-              <div class="question-block" data-tool-policy>
-                <p class="question-label">Does your organization require or limit you to specific AI tools? <em>*</em></p>
-                <div class="choice-list">
-                  <label><input type="radio" name="tool_policy" value="no" required><span>No, I can use whichever tools I choose</span></label>
-                  <label><input type="radio" name="tool_policy" value="yes"><span>Yes</span></label>
-                  <label><input type="radio" name="tool_policy" value="unsure"><span>I’m not sure</span></label>
-                </div>
-                <label class="conditional-field" data-tool-detail hidden>Name the required or permitted tool or tools<input name="required_tools" placeholder="e.g., Microsoft Copilot"></label>
-              </div>
-              <div class="step-actions"><button class="button button-quiet" type="button" data-back>Back</button><button class="button button-primary" type="button" data-next>Continue <span aria-hidden="true">→</span></button></div>
-            </fieldset>
-
-            <fieldset class="form-step" data-step="3" hidden>
-              <legend><span class="step-kicker">04 · Tools &amp; techniques</span><strong>Tell us what feels familiar.</strong></legend>
-              <p class="step-intro">Choose one response per row. “No experience” is a completely valid answer.</p>
-
-              <div class="matrix-block">
-                <div class="matrix-heading"><h2>Generative AI tools</h2><p>How familiar are you with each tool?</p></div>
+              <div class="question-block matrix-block">
+                <p class="question-label">On a scale of 1 to 5, how familiar are you with each of these gen AI tools? <em>*</em></p>
                 <div class="matrix-scroll"><table><thead><tr><th scope="col">Tool</th><th scope="col">Your familiarity</th></tr></thead><tbody>
                   <tr><th scope="row">Claude</th><td><select name="tool_claude" required data-familiarity><option value="">Choose one</option></select></td></tr>
                   <tr><th scope="row">Change Agent AI</th><td><select name="tool_change_agent" required data-familiarity><option value="">Choose one</option></select></td></tr>
@@ -146,55 +138,83 @@
                 </tbody></table></div>
               </div>
 
-              <div class="matrix-block">
-                <div class="matrix-heading"><h2>Features and techniques</h2><p>How familiar are you with each approach?</p></div>
+              <div class="question-block matrix-block">
+                <p class="question-label">On a scale of 1 to 5, how familiar are you with each of these gen AI features and techniques? <em>*</em></p>
                 <div class="matrix-scroll"><table><thead><tr><th scope="col">Feature or technique</th><th scope="col">Your familiarity</th></tr></thead><tbody>
-                  <tr><th scope="row">Attaching context, such as files</th><td><select name="tech_context" required data-familiarity><option value="">Choose one</option></select></td></tr>
+                  <tr><th scope="row">Attaching context, like uploading files</th><td><select name="tech_context" required data-familiarity><option value="">Choose one</option></select></td></tr>
                   <tr><th scope="row">Building Skills</th><td><select name="tech_skills" required data-familiarity><option value="">Choose one</option></select></td></tr>
                   <tr><th scope="row">Conducting Deep Research</th><td><select name="tech_research" required data-familiarity><option value="">Choose one</option></select></td></tr>
                   <tr><th scope="row">Developing Voice Profiles</th><td><select name="tech_voice" required data-familiarity><option value="">Choose one</option></select></td></tr>
                   <tr><th scope="row">Metaprompting</th><td><select name="tech_metaprompting" required data-familiarity><option value="">Choose one</option></select></td></tr>
                   <tr><th scope="row">Setting custom instructions</th><td><select name="tech_custom_instructions" required data-familiarity><option value="">Choose one</option></select></td></tr>
                   <tr><th scope="row">Using Connectors or MCP</th><td><select name="tech_connectors" required data-familiarity><option value="">Choose one</option></select></td></tr>
-                  <tr><th scope="row">Using data controls</th><td><select name="tech_data_controls" required data-familiarity><option value="">Choose one</option></select></td></tr>
+                  <tr><th scope="row">Using data controls, like turning off model training</th><td><select name="tech_data_controls" required data-familiarity><option value="">Choose one</option></select></td></tr>
                   <tr><th scope="row">Using Canvas or Artifacts</th><td><select name="tech_canvas" required data-familiarity><option value="">Choose one</option></select></td></tr>
                   <tr><th scope="row">Using prompt frameworks</th><td><select name="tech_prompt_frameworks" required data-familiarity><option value="">Choose one</option></select></td></tr>
                   <tr><th scope="row">Using Projects</th><td><select name="tech_projects" required data-familiarity><option value="">Choose one</option></select></td></tr>
                 </tbody></table></div>
               </div>
+
+              <label>Optionally, in a sentence or two, share one example of a way you’ve used AI tools in your work so far that you’re particularly proud of.<textarea name="proud_ai_example" rows="5" data-word-limit="75"></textarea><span class="field-meta"><span>Optional · 75 words maximum</span><span data-word-count>0 / 75</span></span></label>
+
+              <div class="question-block" data-tool-policy>
+                <p class="question-label">If you work at an organization, does it require you to use, or limit you to, specific AI tools?</p>
+                <div class="choice-list">
+                  <label><input type="radio" name="tool_policy" value="no"><span>No, I can use whichever tools I choose</span></label>
+                  <label><input type="radio" name="tool_policy" value="yes"><span>Yes—please name the tool or tools below</span></label>
+                  <label><input type="radio" name="tool_policy" value="unsure"><span>I’m not sure</span></label>
+                </div>
+                <label class="conditional-field" data-tool-detail hidden>Name the required or permitted tool or tools<input name="required_tools" placeholder="e.g., Microsoft Copilot"></label>
+              </div>
+
+              <div class="question-block" data-paid-access>
+                <p class="question-label">During the program, will you have access to a paid version of a generative AI tool? <em>*</em></p>
+                <p class="question-help">For example, ChatGPT Plus or an enterprise subscription to Google Gemini or Claude.</p>
+                <div class="choice-list inline-choices">
+                  <label><input type="radio" name="paid_ai_access" value="yes" required><span>Yes—please describe</span></label>
+                  <label><input type="radio" name="paid_ai_access" value="no" required><span>No</span></label>
+                </div>
+                <label class="conditional-field" data-paid-access-detail hidden>Which paid tool or tools will you have access to?<input name="paid_ai_tools" placeholder="e.g., ChatGPT Plus"></label>
+              </div>
               <div class="step-actions"><button class="button button-quiet" type="button" data-back>Back</button><button class="button button-primary" type="button" data-next>Continue <span aria-hidden="true">→</span></button></div>
             </fieldset>
 
-            <fieldset class="form-step" data-step="4" hidden>
-              <legend><span class="step-kicker">05 · Logistics &amp; consent</span><strong>One final check.</strong></legend>
+            <fieldset class="form-step" data-step="3" hidden>
+              <legend><span class="step-kicker">04 · Logistics &amp; consent</span><strong>One final check.</strong></legend>
               <p class="step-intro">Applications are reviewed on a rolling basis. We will reply to every applicant in writing.</p>
 
-              <div class="question-block">
+              <div class="question-block" data-attendance-block>
                 <p class="question-label">Can you attend all five live online sessions? <em>*</em></p>
                 <p class="question-help">Thursdays, 2:00–3:30 PM ET: November 5, 12, and 19, and December 3 and 10. <a href="assets/democracy-ai-accelerator-november-2026.ics" download>Add all five sessions to your calendar.</a></p>
                 <div class="choice-list">
                   <label><input type="radio" name="attendance" value="all" required><span>Yes, I can attend all five</span></label>
-                  <label><input type="radio" name="attendance" value="most"><span>I can attend most, but may miss one</span></label>
                   <label><input type="radio" name="attendance" value="no"><span>No, I can’t make these dates</span></label>
                 </div>
-                <p class="question-help">If these dates do not work, you can <a href="democracy-ai-accelerator-nov26.html#future" target="_blank" rel="noopener">hear about future cohorts</a>.</p>
-              </div>
-
-              <label>Is there anything else you would like us to know? <small>Optional</small><textarea name="anything_else" rows="5" data-word-limit="75"></textarea><span class="field-meta"><span>75 words maximum</span><span data-word-count>0 / 75</span></span></label>
-
-              <label class="consent-row"><input type="checkbox" name="terms_accepted" required><span>I have read and understood the <a href="democracy-ai-accelerator-nov26.html#accelerator-terms" target="_blank" rel="noopener">Accelerator Terms and Conditions</a>. <em>*</em></span></label>
-
-              <div class="question-block mailing-consent">
-                <p class="question-label">Would you like to join the New Democracy Studio mailing list for similar opportunities? <em>*</em></p>
-                <div class="choice-list inline-choices">
-                  <label><input type="radio" name="mailing_list" value="yes" required><span>Yes, keep me informed</span></label>
-                  <label><input type="radio" name="mailing_list" value="no"><span>No, thank you</span></label>
+                <div class="attendance-diversion" data-attendance-diversion role="alert" tabindex="-1" aria-hidden="true">
+                  <span class="mini-label">These dates don’t work?</span>
+                  <strong>Let’s find a future cohort that does.</strong>
+                  <p>Live attendance is important for this cohort. Stop here and tell us what timing or language would work better for you.</p>
+                  <a class="button button-primary" href="democracy-ai-accelerator-nov26.html#future">Get notified about future cohorts <span aria-hidden="true">→</span></a>
                 </div>
               </div>
 
-              <div class="submission-note"><strong>What happens next?</strong><p>If accepted, you will receive a payment link. Your seat is confirmed after payment, due no later than 11:59 PM ET on October 30.</p></div>
-              <div class="step-actions final-actions"><button class="button button-quiet" type="button" data-back>Back</button><button class="button button-primary" type="submit">Submit application <span aria-hidden="true">↗</span></button></div>
-              <p class="form-status" role="status" aria-live="polite" data-form-status></p>
+              <div data-attendance-followup>
+                <label>Is there anything else you would like us to know? <small>Optional</small><textarea name="anything_else" rows="5" data-word-limit="75"></textarea><span class="field-meta"><span>75 words maximum</span><span data-word-count>0 / 75</span></span></label>
+
+                <label class="consent-row"><input type="checkbox" name="terms_accepted" required><span>I have read and understood the <a href="democracy-ai-accelerator-nov26.html#accelerator-terms" target="_blank" rel="noopener">Accelerator Terms and Conditions</a>, including what’s required to receive a certificate. <em>*</em></span></label>
+
+                <div class="question-block mailing-consent">
+                  <p class="question-label">Would you like to join the New Democracy Studio mailing list for similar opportunities? <em>*</em></p>
+                  <div class="choice-list inline-choices">
+                    <label><input type="radio" name="mailing_list" value="yes" required><span>Yes, keep me informed</span></label>
+                    <label><input type="radio" name="mailing_list" value="no"><span>No, thank you</span></label>
+                  </div>
+                </div>
+
+                <div class="submission-note"><strong>What happens next?</strong><p>We’ll review your application and send qualified individuals a registration form with a payment link. Registration is only finalized once payment is received.</p></div>
+                <div class="step-actions final-actions"><button class="button button-quiet" type="button" data-back>Back</button><button class="button button-primary" type="submit">Submit application <span aria-hidden="true">↗</span></button></div>
+                <p class="form-status" role="status" aria-live="polite" data-form-status></p>
+              </div>
             </fieldset>
           </form>
 
@@ -213,4 +233,3 @@
   <footer class="site-footer"><div class="shell footer-row"><a class="nds-brand" href="index.html"><span>NEW</span><strong>DEMOCRACY</strong><span>STUDIO</span></a><p>© 2026 New Democracy Studio.<br>A project of Five Suns Global, LLC.</p><nav aria-label="Footer navigation"><a href="democracy-ai-accelerator-nov26.html">Accelerator</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a></nav></div></footer>
 </body>
 </html>
-
