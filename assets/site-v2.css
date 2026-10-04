@@ -293,7 +293,7 @@
 
 
 /* Homepage cohort promotion */
-.cohort-float-anchor{position:relative;height:0;z-index:12}
+
 .cohort-float-card{position:absolute;top:0;right:max(48px,calc((100vw - var(--max))/2));width:min(390px,calc(100vw - 96px));height:164px;display:grid;grid-template-columns:44% 56%;overflow:hidden;border:4px solid #fff;border-radius:24px;background:var(--midnight);box-shadow:0 20px 55px rgba(7,25,55,.28);text-decoration:none;transform:translateY(-50%);transition:transform .2s ease,box-shadow .2s ease}
 .cohort-float-card:hover{transform:translateY(calc(-50% - 4px));box-shadow:0 26px 64px rgba(7,25,55,.34)}
 .cohort-float-card:focus-visible{outline:4px solid var(--yellow);outline-offset:4px}
@@ -305,31 +305,9 @@
 .site-v2 .home-why{padding-top:132px}
 .site-v2 .d2-feature h3{font-size:clamp(1.7rem,2.6vw,2.35rem);line-height:1.12}
 @media(max-width:620px){
-  .cohort-float-anchor{height:auto;padding:18px 16px;background:#fff}
+  
   .cohort-float-card{position:relative;top:auto;right:auto;width:100%;height:142px;transform:none}
   .cohort-float-card:hover{transform:translateY(-2px)}
   .cohort-float-card strong{font-size:1.2rem}
   .site-v2 .home-why{padding-top:72px}
-}
-
-/* Full-width accelerator invitation */
-.cohort-float-card{
-  position:relative;top:auto;right:auto;display:flex;align-items:flex-end;width:100%;height:clamp(330px,37vw,510px);margin:0;overflow:hidden;border:0;border-radius:0;
-  background:linear-gradient(90deg,rgba(5,22,53,.96) 0%,rgba(5,22,53,.89) 38%,rgba(5,22,53,.22) 76%,rgba(5,22,53,.08) 100%),url("democracy-ai-synth-v2-4k.jpg") center 54%/cover no-repeat;
-  box-shadow:none;transform:none;text-decoration:none;color:#fff
-}
-.cohort-float-card:hover{transform:none;box-shadow:none}
-.cohort-float-card>img{display:none}
-.cohort-float-card>span{display:flex;flex-direction:column;justify-content:flex-end;gap:18px;width:min(var(--max),calc(100% - 48px));min-height:100%;margin:0 auto;padding:48px 0 52px;background:none}
-.cohort-float-card small{color:var(--cyan);font-size:.72rem;font-weight:900;letter-spacing:.14em;line-height:1.3}
-.cohort-float-card strong{max-width:720px;margin:0;color:#fff;font-family:Georgia,"Times New Roman",serif;font-size:clamp(2.2rem,4.6vw,5rem);font-weight:700;line-height:.97;letter-spacing:-.04em}
-.cohort-float-card em{color:var(--yellow);font-size:1rem;font-style:normal;font-weight:900}
-.cohort-float-card em b{font-size:1.35em;margin-left:.25em}
-.cohort-float-card:focus-visible{outline:4px solid var(--yellow);outline-offset:-8px}
-@media(max-width:620px){
-  .cohort-float-card{height:310px;background-position:62% center}
-  .cohort-float-card>span{width:calc(100% - 42px);padding:33px 0 37px;gap:13px}
-  .cohort-float-card small{font-size:.58rem;letter-spacing:.11em}
-  .cohort-float-card strong{max-width:330px;font-size:2.25rem;line-height:1}
-  .cohort-float-card em{font-size:.85rem}
 }
