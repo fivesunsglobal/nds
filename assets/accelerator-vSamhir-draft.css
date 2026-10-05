@@ -22,6 +22,7 @@ h1 em,h2 em,.hero h1 em,.included-section h2 em,.community-section h2 em{color:i
 .button-primary{background:var(--cyan);color:var(--night)}
 .floating-apply{box-shadow:4px 4px 0 var(--pink),0 0 22px rgba(83,245,239,.25)}
 .floating-apply.is-hidden{opacity:0;pointer-events:none;transform:translateY(14px)}
+.hero-art{background:linear-gradient(90deg,#0b1d3a 0%,rgba(11,29,58,.95) 25%,rgba(11,29,58,.67) 50%,rgba(11,29,58,.08) 83%),url('democracy-ai-accelerator-hero-watercolor.png') center/cover no-repeat}
 .hero-facts{max-width:1050px;gap:24px}
 .hero-facts span,.hero-facts a{flex:1 1 0;min-width:165px}
 .hero-lead-in{max-width:720px;margin-top:21px;color:#fff;font-size:clamp(1.38rem,2vw,1.85rem);font-weight:650;letter-spacing:-.025em;line-height:1.35}
