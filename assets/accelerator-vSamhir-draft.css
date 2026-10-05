@@ -29,7 +29,7 @@ h1 em,h2 em,.hero h1 em,.included-section h2 em,.community-section h2 em{color:i
 .hero-concept-button{border:1px solid rgba(181,211,255,.28);border-radius:7px;background:#10294d;color:#dce8fa;padding:7px 10px;font:700 .68rem/1 Inter,"Segoe UI",sans-serif;white-space:nowrap;cursor:pointer}
 .hero-concept-button:hover{border-color:#53f5ef;color:#fff}
 .hero-concept-button[aria-pressed="true"]{background:#53f5ef;border-color:#53f5ef;color:#07172e}
-.hero-art{background:linear-gradient(90deg,#0b1d3a 0%,rgba(11,29,58,.95) 25%,rgba(11,29,58,.67) 50%,rgba(11,29,58,.08) 83%),url('democracy-ai-accelerator-hero-watercolor.png') center/cover no-repeat}
+.hero-art{background:linear-gradient(90deg,#0b1d3a 0%,rgba(11,29,58,.95) 25%,rgba(11,29,58,.67) 50%,rgba(11,29,58,.08) 83%),url('democracy-ai-accelerator-hero-samhir.png') center/cover no-repeat}
 .hero-facts{max-width:1050px;gap:24px}
 .hero-facts span,.hero-facts a{flex:1 1 0;min-width:165px}
 .hero-lead-in{max-width:720px;margin-top:21px;color:#fff;font-size:clamp(1.38rem,2vw,1.85rem);font-weight:650;letter-spacing:-.025em;line-height:1.35}
