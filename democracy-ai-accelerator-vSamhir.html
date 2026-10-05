@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+  <meta name="robots" content="noindex,nofollow">
   <meta name="description" content="The Democracy+AI Accelerator: five live sessions, personal coaching, and a community putting AI to work for democratic impact.">
   <link rel="canonical" href="https://newdemocracystud.io/democracy-ai-accelerator-nov26.html">
   <link rel="alternate" hreflang="en" href="https://newdemocracystud.io/democracy-ai-accelerator-nov26.html">
@@ -18,12 +18,23 @@
   <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
   <link rel="preload" as="image" href="assets/democracy-ai-accelerator-hero-watercolor.png" fetchpriority="high">
   <link rel="stylesheet" href="assets/democracy-ai-new.css?v=1">
-  <link rel="stylesheet" href="assets/accelerator-vSamhir-draft.css?v=2">
+  <link rel="stylesheet" href="assets/accelerator-vSamhir-draft.css?v=3">
   <link rel="stylesheet" href="assets/bilingual.css?v=2">
   <script src="assets/democracy-ai-new.js?v=2" defer></script>
 </head>
 <body data-page="accelerator-nov26">
   <a class="skip-link" href="#main">Skip to content</a>
+  <aside class="hero-concept-switcher" aria-label="Hero image concepts">
+    <span>Compare heroes</span>
+    <div class="hero-concept-buttons">
+      <button class="hero-concept-button" type="button" data-hero-option="cut-paper">1 · Cut-paper</button>
+      <button class="hero-concept-button" type="button" data-hero-option="vellum">2 · Vellum</button>
+      <button class="hero-concept-button" type="button" data-hero-option="dialogue">3 · Dialogue</button>
+      <button class="hero-concept-button" type="button" data-hero-option="watercolor">4 · Watercolor</button>
+      <button class="hero-concept-button" type="button" data-hero-option="cityscape">5 · Cityscape</button>
+      <button class="hero-concept-button" type="button" data-hero-option="linework">6 · Linework</button>
+    </div>
+  </aside>
   <header class="site-header global-header">
     <div class="shell global-nav">
       <a class="global-brand" href="index.html" aria-label="New Democracy Studio home"><span>NEW</span><strong>DEMOCRACY</strong><span>STUDIO</span></a>
@@ -214,6 +225,31 @@
     });
     addEventListener('hashchange', () => { if (location.hash === '#accelerator-terms' && !termsDialog.open) termsDialog.showModal(); });
     if (location.hash === '#accelerator-terms') termsDialog.showModal();
+  })();
+</script>
+<script>
+  (() => {
+    const art = document.querySelector('.hero-art');
+    const buttons = [...document.querySelectorAll('[data-hero-option]')];
+    if (!art || !buttons.length) return;
+    const images = {
+      'cut-paper': 'assets/hero-concepts/democracy-ai-hero-01-cut-paper-collaboration.png',
+      vellum: 'assets/hero-concepts/democracy-ai-hero-02-translucent-vellum.png',
+      dialogue: 'assets/hero-concepts/democracy-ai-hero-03-screenprinted-dialogue.png',
+      watercolor: 'assets/hero-concepts/democracy-ai-hero-04-watercolor-bokeh.png',
+      cityscape: 'assets/hero-concepts/democracy-ai-hero-05-civic-cityscape.png',
+      linework: 'assets/hero-concepts/democracy-ai-hero-06-color-linework.png'
+    };
+    const setHero = key => {
+      const selected = images[key] ? key : 'watercolor';
+      art.style.backgroundImage = `linear-gradient(90deg,#0b1d3a 0%,rgba(11,29,58,.95) 25%,rgba(11,29,58,.67) 50%,rgba(11,29,58,.08) 83%),url('${images[selected]}')`;
+      buttons.forEach(button => button.setAttribute('aria-pressed', String(button.dataset.heroOption === selected)));
+      const url = new URL(location.href);
+      url.searchParams.set('hero', selected);
+      history.replaceState(null, '', url);
+    };
+    buttons.forEach(button => button.addEventListener('click', () => setHero(button.dataset.heroOption)));
+    setHero(new URLSearchParams(location.search).get('hero') || 'watercolor');
   })();
 </script>
 </body>
