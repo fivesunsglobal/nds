@@ -99,7 +99,7 @@
               </div>
               <label>Your LinkedIn profile<input type="url" name="linkedin" autocomplete="url" placeholder="https://linkedin.com/in/..."></label>
               <div class="field-grid two-up">
-                <label>Your location (city and country) <em>*</em><input name="location" autocomplete="address-level2" placeholder="e.g., Nairobi, Kenya" required></label>
+                <label>Your location (city and country) <em>*</em><input name="location" autocomplete="address-level2" placeholder="e.g., Dallas, Texas" required></label>
                 <label>Your time zone <em>*</em><input name="time_zone" placeholder="e.g., Bogotá / UTC−5" required></label>
               </div>
               <div class="step-actions"><span></span><button class="button button-primary" type="button" data-next>Continue <span aria-hidden="true">→</span></button></div>
@@ -122,13 +122,13 @@
               <p class="step-intro">There is no “right” level. Honest answers help us shape the learning experience.</p>
 
               <div class="question-block">
-                <p class="question-label">How would you rate your comfort using generative AI tools (like ChatGPT, Claude, Gemini, or Copilot) in your work?</p>
+                <p class="question-label">How would you rate your comfort using generative AI tools (like ChatGPT, Claude, Gemini, or Copilot) in your work? <em>*</em></p>
                 <div class="comfort-scale" role="radiogroup" aria-label="Comfort using generative AI tools">
-                  <label><input type="radio" name="ai_comfort" value="1"><span><b>1</b>I’ve rarely or never used them</span></label>
-                  <label><input type="radio" name="ai_comfort" value="2"><span><b>2</b>I’ve tried them for a few simple tasks</span></label>
-                  <label><input type="radio" name="ai_comfort" value="3"><span><b>3</b>I use them regularly for everyday tasks, like drafting or summarizing</span></label>
-                  <label><input type="radio" name="ai_comfort" value="4"><span><b>4</b>I’ve built reusable setups, like Skills, Gems, or Projects</span></label>
-                  <label><input type="radio" name="ai_comfort" value="5"><span><b>5</b>I build automations, agents, or AI-powered tools for others</span></label>
+                  <label><input type="radio" name="ai_comfort" value="1" required><span><b>1</b>I’ve rarely or never used them</span></label>
+                  <label><input type="radio" name="ai_comfort" value="2" required><span><b>2</b>I’ve tried them for a few simple tasks</span></label>
+                  <label><input type="radio" name="ai_comfort" value="3" required><span><b>3</b>I use them regularly for everyday tasks, like drafting or summarizing</span></label>
+                  <label><input type="radio" name="ai_comfort" value="4" required><span><b>4</b>I’ve built reusable setups, like Skills, Gems, or Projects</span></label>
+                  <label><input type="radio" name="ai_comfort" value="5" required><span><b>5</b>I build automations, agents, or AI-powered tools for others</span></label>
                 </div>
               </div>
               <div class="question-block matrix-block">
@@ -164,11 +164,11 @@
               <label>Optionally, in a sentence or two, share one example of a way you’ve used AI tools in your work so far that you’re particularly proud of.<textarea name="proud_ai_example" rows="5" data-word-limit="75"></textarea><span class="field-meta"><span>Optional · 75 words maximum</span><span data-word-count>0 / 75</span></span></label>
 
               <div class="question-block" data-tool-policy>
-                <p class="question-label">If you work at an organization, does it require you to use, or limit you to, specific AI tools?</p>
+                <p class="question-label">If you work at an organization, does it require you to use, or limit you to, specific AI tools? <em>*</em></p>
                 <div class="choice-list">
-                  <label><input type="radio" name="tool_policy" value="no"><span>No, I can use whichever tools I choose</span></label>
-                  <label><input type="radio" name="tool_policy" value="yes"><span>Yes—please name the tool or tools below</span></label>
-                  <label><input type="radio" name="tool_policy" value="unsure"><span>I’m not sure</span></label>
+                  <label><input type="radio" name="tool_policy" value="no" required><span>No, I can use whichever tools I choose</span></label>
+                  <label><input type="radio" name="tool_policy" value="yes" required><span>Yes—please name the tool or tools below</span></label>
+                  <label><input type="radio" name="tool_policy" value="unsure" required><span>I’m not sure</span></label>
                 </div>
                 <label class="conditional-field" data-tool-detail hidden>Name the required or permitted tool or tools<input name="required_tools" placeholder="e.g., Microsoft Copilot"></label>
               </div>

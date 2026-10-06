@@ -122,13 +122,13 @@
               <p class="step-intro">No hay un nivel «correcto». Tus respuestas sinceras nos ayudan a diseñar la experiencia de aprendizaje.</p>
 
               <div class="question-block">
-                <p class="question-label">¿Cómo calificarías tu nivel de comodidad al usar herramientas de IA generativa (como ChatGPT, Claude, Gemini o Copilot) en tu trabajo?</p>
+                <p class="question-label">¿Cómo calificarías tu nivel de comodidad al usar herramientas de IA generativa (como ChatGPT, Claude, Gemini o Copilot) en tu trabajo? <em>*</em></p>
                 <div class="comfort-scale" role="radiogroup" aria-label="Comodidad al usar herramientas de IA generativa">
-                  <label><input type="radio" name="ai_comfort" value="1"><span><b>1</b>Casi nunca o nunca las he usado</span></label>
-                  <label><input type="radio" name="ai_comfort" value="2"><span><b>2</b>Las he probado para algunas tareas sencillas</span></label>
-                  <label><input type="radio" name="ai_comfort" value="3"><span><b>3</b>Las uso habitualmente para tareas cotidianas, como redactar o resumir</span></label>
-                  <label><input type="radio" name="ai_comfort" value="4"><span><b>4</b>He creado configuraciones reutilizables, como Skills, Gems o Projects</span></label>
-                  <label><input type="radio" name="ai_comfort" value="5"><span><b>5</b>Creo automatizaciones, agentes o herramientas con IA para otras personas</span></label>
+                  <label><input type="radio" name="ai_comfort" value="1" required><span><b>1</b>Casi nunca o nunca las he usado</span></label>
+                  <label><input type="radio" name="ai_comfort" value="2" required><span><b>2</b>Las he probado para algunas tareas sencillas</span></label>
+                  <label><input type="radio" name="ai_comfort" value="3" required><span><b>3</b>Las uso habitualmente para tareas cotidianas, como redactar o resumir</span></label>
+                  <label><input type="radio" name="ai_comfort" value="4" required><span><b>4</b>He creado configuraciones reutilizables, como Skills, Gems o Projects</span></label>
+                  <label><input type="radio" name="ai_comfort" value="5" required><span><b>5</b>Creo automatizaciones, agentes o herramientas con IA para otras personas</span></label>
                 </div>
               </div>
 
@@ -165,11 +165,11 @@
               <label>Si lo deseas, comparte en una o dos frases un ejemplo del uso de herramientas de IA en tu trabajo del que te sientas especialmente orgulloso.<textarea name="proud_ai_example" rows="5" data-word-limit="75"></textarea><span class="field-meta"><span>Opcional · máximo 75 palabras</span><span data-word-count>0 / 75</span></span></label>
 
               <div class="question-block" data-tool-policy>
-                <p class="question-label">Si trabajas en una organización, ¿te exige usar herramientas de IA específicas o limita cuáles puedes usar?</p>
+                <p class="question-label">Si trabajas en una organización, ¿te exige usar herramientas de IA específicas o limita cuáles puedes usar? <em>*</em></p>
                 <div class="choice-list">
-                  <label><input type="radio" name="tool_policy" value="no"><span>No, puedo usar las herramientas que elija</span></label>
-                  <label><input type="radio" name="tool_policy" value="yes"><span>Sí; indica la herramienta o las herramientas abajo</span></label>
-                  <label><input type="radio" name="tool_policy" value="unsure"><span>No estoy seguro</span></label>
+                  <label><input type="radio" name="tool_policy" value="no" required><span>No, puedo usar las herramientas que elija</span></label>
+                  <label><input type="radio" name="tool_policy" value="yes" required><span>Sí; indica la herramienta o las herramientas abajo</span></label>
+                  <label><input type="radio" name="tool_policy" value="unsure" required><span>No estoy seguro</span></label>
                 </div>
                 <label class="conditional-field" data-tool-detail hidden>Nombra las herramientas exigidas o permitidas<input name="required_tools" placeholder="p. ej., Microsoft Copilot"></label>
               </div>
