@@ -1,0 +1,5 @@
+.future-section .interest-form .button-outline {
+  background: var(--yellow);
+  border-color: var(--yellow);
+  color: var(--night);
+}
