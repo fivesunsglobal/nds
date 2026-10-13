@@ -1,10 +1,13 @@
 User-agent: *
+Disallow: /democracy-ai-accelerator-email.html
 Allow: /
 
 User-agent: OAI-SearchBot
+Disallow: /democracy-ai-accelerator-email.html
 Allow: /
 
 User-agent: GPTBot
+Disallow: /democracy-ai-accelerator-email.html
 Allow: /
 
 Sitemap: https://newdemocracystud.io/sitemap.xml
