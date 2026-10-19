@@ -52,9 +52,7 @@
   [...form.elements.coaching_interest].forEach(input => input.addEventListener('change', updateCoachingAvailability));
   updateCoachingAvailability();
 
-  const params = new URLSearchParams(location.search);
-  const acceptedRate = params.get('rate') === '495' ? '495' : '645';
-  document.querySelector('[data-tuition-display]').textContent = `$${acceptedRate} USD`;
+  document.querySelector('[data-tuition-display]').textContent = '$495 USD';
 
   const showStep = (index, focus = true) => {
     currentStep = Math.max(0, Math.min(index, steps.length - 1));
