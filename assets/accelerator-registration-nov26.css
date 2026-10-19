@@ -1,0 +1,66 @@
+.registration-page .registration-hero:after{background:linear-gradient(90deg,rgba(11,29,58,.98),rgba(11,29,58,.82) 60%,rgba(11,29,58,.28)),url('democracy-ai-accelerator-hero-samhir.png') 70% 50%/cover no-repeat;opacity:.62}
+.registration-page .registration-hero .apply-hero-inner{grid-template-columns:1fr;padding-block:70px 62px}
+.registration-page .registration-hero h1{max-width:920px}
+.registration-page .registration-hero .lead{max-width:780px}
+.registration-page .welcome-mark{display:grid;place-items:center;width:22px;height:22px;border-radius:50%;background:var(--cyan);color:#102441;font-size:.72rem;font-weight:900}
+.registration-page .step-list button{grid-template-columns:31px 1fr}
+.registration-page .form-progress span{width:25%}
+.registration-page .field-hint{display:block;margin-top:6px;color:#78869a;font-size:.68rem;font-weight:600;line-height:1.4}
+.registration-page [data-coaching-availability][hidden]{display:none!important}
+.registration-page .welcome-note{clear:both;margin:14px 0 28px;padding:20px 22px;border-left:4px solid #19838a;background:#edf8f7;color:#41566d}
+.registration-page .welcome-note p{font-size:.83rem;line-height:1.62}
+.registration-page .welcome-note p+p{margin-top:10px}
+.registration-page .choice-grid{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin-top:15px}
+.registration-page .check-grid label{position:relative;display:block;cursor:pointer}
+.registration-page .check-grid input{position:absolute;opacity:0;pointer-events:none}
+.registration-page .check-grid span{display:flex;flex-direction:column;justify-content:center;min-height:66px;padding:12px 13px 12px 43px;border:1px solid #bcc9da;border-radius:7px;background:#fff;color:#42556d;font-size:.8rem;font-weight:700;line-height:1.35}
+.registration-page .check-grid span:before{content:"";position:absolute;left:15px;top:50%;width:15px;height:15px;border:1.5px solid #8798ad;border-radius:4px;transform:translateY(-50%);background:#fff}
+.registration-page .check-grid input:checked+span{border-color:#16828a;background:#e7f8f7;color:#183b4b;box-shadow:0 0 0 2px rgba(22,130,138,.16)}
+.registration-page .check-grid input:checked+span:before{content:"✓";display:grid;place-items:center;border-color:#16828a;background:#16828a;color:#fff;font-size:.66rem;font-weight:900}
+.registration-page .check-grid input:focus-visible+span{outline:3px solid #6551ac;outline-offset:2px}
+.registration-page .check-grid input:disabled+span{opacity:.48;cursor:not-allowed}
+.registration-page .check-grid small{display:block;margin-top:3px;color:#718096;font-size:.66rem;font-weight:600}
+.registration-page .tool-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:9px;margin-top:15px}
+.registration-page .tool-grid span{padding:13px 12px 13px 39px}
+.registration-page .three-choices{grid-template-columns:repeat(3,1fr)}
+.registration-page .payment-path>label,.registration-page .payment-path .field-grid>label{display:block;margin-top:22px;color:#273a54;font-size:.84rem;font-weight:750}
+.registration-page .payment-path label em{color:#b43c83;font-style:normal}
+.registration-page .payment-path label>small{float:right;color:#7b8798;font-size:.68rem;font-weight:650}
+.registration-page .tuition-card{display:flex;align-items:center;justify-content:space-between;gap:28px;margin:22px 0 28px;padding:22px 24px;border-radius:9px;background:#102441;color:#fff;box-shadow:inset 0 0 0 1px rgba(83,245,239,.25)}
+.registration-page .tuition-card .mini-label{display:block;margin-bottom:5px;color:var(--cyan)}
+.registration-page .tuition-card strong{font:700 2rem/1 Georgia,"Times New Roman",serif}
+.registration-page .tuition-card p{max-width:340px;color:#bfcde2;font-size:.7rem;line-height:1.5}
+.registration-page .stripe-handoff{margin-top:24px;padding:25px;border:1px solid #bbb6e5;border-radius:10px;background:linear-gradient(145deg,#f3f1ff,#f8fbff);box-shadow:0 12px 32px rgba(55,50,120,.08)}
+.registration-page .stripe-heading{display:flex;align-items:flex-start;gap:14px}
+.registration-page .stripe-heading>span{display:grid;place-items:center;width:40px;height:40px;flex:none;border-radius:9px;background:#635bff;color:#fff;font-size:1.25rem;font-weight:900}
+.registration-page .stripe-heading strong{display:block;color:#202e49;font-size:.95rem}
+.registration-page .stripe-heading p{margin-top:3px;color:#627188;font-size:.77rem;line-height:1.5}
+.registration-page .stripe-handoff ol{margin:18px 0 20px 20px;color:#4f6076;font-size:.76rem;line-height:1.65}
+.registration-page .stripe-button{background:#635bff;color:#fff}
+.registration-page .stripe-button:hover{background:#5148f0}
+.registration-page .confirmation-field{margin-top:24px!important;padding:19px;border:1px solid #cbd7e5;border-radius:8px;background:#f7f9fc}
+.registration-page .invoice-help{margin-top:18px;color:#617087;font-size:.75rem;line-height:1.5}
+.registration-page .invoice-help a{color:#176c7a;font-weight:750}
+.registration-page .policy-card{display:grid;grid-template-columns:46px 1fr;gap:16px;margin-top:24px;padding:22px 24px;border:1px solid #d7c66e;border-radius:10px;background:#fff9e8;color:#42536a}
+.registration-page .policy-icon{display:grid;place-items:center;width:42px;height:42px;border-radius:50%;background:#f4dd83;color:#614b00;font-size:1.25rem;font-weight:800}
+.registration-page .policy-card .mini-label{color:#806200}
+.registration-page .policy-card h3{margin-top:4px;color:#213650;font:700 1.45rem/1.15 Georgia,"Times New Roman",serif}
+.registration-page .policy-card>div>p:not(.mini-label){margin-top:7px;font-size:.76rem;line-height:1.5}
+.registration-page .policy-consent{display:flex;align-items:flex-start;gap:11px;margin-top:15px;padding-top:15px;border-top:1px solid rgba(128,98,0,.2);color:#384b61;font-weight:700}
+.registration-page .policy-consent input{width:18px;height:18px;margin-top:1px;flex:none;accent-color:#16828a}
+.registration-page .policy-consent span{font-size:.78rem;line-height:1.5}
+.registration-page .policy-consent a{color:#176c7a}
+.registration-page .policy-consent em{color:#b43c83;font-style:normal}
+.registration-page .form-success a{color:#176c7a;font-weight:750}
+
+@media(max-width:980px){
+  .registration-page .step-list{grid-template-columns:repeat(4,1fr)}
+}
+@media(max-width:760px){
+  .registration-page .choice-grid,.registration-page .tool-grid{grid-template-columns:1fr}
+  .registration-page .three-choices{grid-template-columns:1fr}
+  .registration-page .tuition-card{align-items:flex-start;flex-direction:column;gap:12px}
+}
+@media(max-width:460px){
+  .registration-page .policy-card{grid-template-columns:1fr;padding:19px}
+}
