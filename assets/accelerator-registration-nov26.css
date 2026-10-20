@@ -39,6 +39,8 @@
 .registration-page .stripe-button:hover{background:#5148f0}
 .registration-page .invoice-help{margin-top:18px;color:#617087;font-size:.75rem;line-height:1.5}
 .registration-page .invoice-help a{color:#176c7a;font-weight:750}
+.registration-page .policy-terms-link{color:inherit;text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:3px}
+.registration-page .policy-terms-link:hover{color:#176c7a}
 .registration-page .form-success a{color:#176c7a;font-weight:750}
 
 @media(max-width:980px){
