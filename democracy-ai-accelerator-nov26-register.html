@@ -142,27 +142,9 @@
 
             <fieldset class="form-step" data-step="3" hidden>
               <legend><span class="step-kicker">04 · Payment and agreement</span><strong>Secure your seat.</strong></legend>
-              <p class="step-intro">The secure Stripe payment page opens in a new tab so you don’t lose your answers here. Make sure you return and enter the confirmation word before submitting.</p>
+              <p class="step-intro">Use the payment link in the email to submit your payment and secure your seat.</p>
 
-              <div class="tuition-card" aria-label="Tuition due">
-                <div><span class="mini-label">Your tuition</span><strong data-tuition-display>$495 USD</strong></div>
-              </div>
-
-              <div class="payment-path">
-                <div class="stripe-handoff">
-                  <div class="stripe-heading"><span aria-hidden="true">S</span><div><strong>Pay securely with Stripe</strong><p>The payment page opens in a new tab. Return here afterward to finish registration.</p></div></div>
-                  <ol>
-                    <li>Open the secure payment page.</li>
-                    <li>Complete payment and copy your confirmation word.</li>
-                    <li>Return here and submit your registration.</li>
-                  </ol>
-                  <a class="button button-primary stripe-button" href="https://buy.stripe.com/7sY00i1Ft4ncfWr9th3ZK01" target="_blank" rel="noopener">Open secure payment <span aria-hidden="true">↗</span></a>
-                </div>
-
-                <label>Stripe confirmation word <em>*</em><input name="payment_confirmation" autocomplete="off" required><span class="field-hint">Enter the word shown on Stripe’s payment-confirmation page.</span></label>
-              </div>
-
-              <p class="invoice-help">Does your organization require an invoice instead? Email <a href="mailto:program@newdemocracystud.io">program@newdemocracystud.io</a> before completing payment.</p>
+              <label>Stripe confirmation word <small>Optional</small><input name="payment_confirmation" autocomplete="off"><span class="field-hint">If you received a confirmation word after paying, you may enter it here.</span></label>
 
               <div class="question-block">
                 <p class="question-label">Have you reviewed and agreed to the <a class="policy-terms-link" href="democracy-ai-accelerator-nov26.html#accelerator-terms" target="_blank" rel="noopener">Program Terms</a>? <em>*</em></p>
