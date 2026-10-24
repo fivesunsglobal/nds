@@ -54,8 +54,6 @@
   [...form.elements.coaching_interest].forEach(input => input.addEventListener('change', updateCoachingAvailability));
   updateCoachingAvailability();
 
-  document.querySelector('[data-tuition-display]').textContent = '$495 USD';
-
   const showStep = (index, focus = true) => {
     currentStep = Math.max(0, Math.min(index, steps.length - 1));
     steps.forEach((step, i) => { step.hidden = i !== currentStep; });
