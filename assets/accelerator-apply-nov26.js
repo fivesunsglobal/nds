@@ -191,4 +191,3 @@
   const hashStep = Number((location.hash.match(/step-(\d+)/) || [])[1]) - 1;
   showStep(Number.isInteger(hashStep) && hashStep >= 0 ? hashStep : 0, false);
 })();
-
