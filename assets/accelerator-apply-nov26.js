@@ -167,7 +167,7 @@
     window.ndsTrack?.('application_submit_attempt', applicationEventParams);
     submit.disabled = true;
     status.classList.remove('error');
-    status.textContent = 'Submitting your application…';
+    status.textContent = 'Submitting your late-addition request…';
     try {
       // Apps Script web apps return through a Google-hosted redirect that does not
       // expose CORS response headers. An opaque response still confirms the browser
@@ -182,7 +182,7 @@
       window.ndsTrack?.('application_complete', applicationEventParams);
     } catch {
       status.classList.add('error');
-      status.textContent = 'Your application could not be sent. Please try again; your entries have been kept.';
+      status.textContent = 'Your late-addition request could not be sent. Please try again; your entries have been kept.';
     } finally {
       submit.disabled = false;
     }
@@ -191,3 +191,4 @@
   const hashStep = Number((location.hash.match(/step-(\d+)/) || [])[1]) - 1;
   showStep(Number.isInteger(hashStep) && hashStep >= 0 ? hashStep : 0, false);
 })();
+
