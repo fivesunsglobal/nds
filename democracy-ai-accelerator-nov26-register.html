@@ -144,7 +144,12 @@
               <legend><span class="step-kicker">04 · Payment and agreement</span><strong>Secure your seat.</strong></legend>
               <p class="step-intro">Find your payment link in the email.</p>
 
-              <label>Stripe confirmation word <small>Optional</small><input name="payment_confirmation" autocomplete="off"><span class="field-hint">After you paid you should have received a confirmation word, please enter it here.</span></label>
+              <div class="question-block">
+                <p class="question-label">Payment confirmation <em>*</em></p>
+                <div class="choice-list">
+                  <label><input type="checkbox" name="payment_completed" value="yes" required><span>I confirm I have completed payment for the course via the link in the email.</span></label>
+                </div>
+              </div>
 
               <div class="question-block">
                 <p class="question-label">Have you reviewed and agreed to the <a class="policy-terms-link" href="democracy-ai-accelerator-nov26.html#accelerator-terms" target="_blank" rel="noopener">Program Terms</a>? <em>*</em></p>
