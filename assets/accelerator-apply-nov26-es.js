@@ -167,7 +167,7 @@
     window.ndsTrack?.('application_submit_attempt', applicationEventParams);
     submit.disabled = true;
     status.classList.remove('error');
-    status.textContent = 'Enviando tu solicitud…';
+    status.textContent = 'Enviando tu solicitud de incorporación tardía…';
     try {
       // Las aplicaciones web de Apps Script responden mediante una redirección de
       // Google sin encabezados CORS. Una respuesta opaca confirma que el navegador
@@ -182,7 +182,7 @@
       window.ndsTrack?.('application_complete', applicationEventParams);
     } catch {
       status.classList.add('error');
-      status.textContent = 'No se pudo enviar tu solicitud. Inténtalo de nuevo; tus respuestas se han conservado.';
+      status.textContent = 'No se pudo enviar tu solicitud de incorporación tardía. Inténtalo de nuevo; tus respuestas se han conservado.';
     } finally {
       submit.disabled = false;
     }
@@ -191,3 +191,4 @@
   const hashStep = Number((location.hash.match(/step-(\d+)/) || [])[1]) - 1;
   showStep(Number.isInteger(hashStep) && hashStep >= 0 ? hashStep : 0, false);
 })();
+
